@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dataset xsi:nil="true"/>
+    <dimensions>
+        <field>Territories_Solicite_2.Opportunity.AQC_Date_Asked__c_Year~~~Opportunity.AQC_Date_Asked__c_Month~~~Opportunity.AQC_Date_Asked__c_Day</field>
+        <isDerived>false</isDerived>
+        <label>Date Asked</label>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Territories_Solicite_2.Account.Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Account.Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>Account.Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Territories_Solicite_2.Opportunity.Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Opportunity.Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>Opportunity.Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>2</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>GO___Solicited_by_OT_1.OpportunityTeamMember.Name</field>
+        <isDerived>false</isDerived>
+        <label>Gift Officer</label>
+        <sortIndex>3</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Med_Adv___Solicited__1.Opportunity.AQC_Date_Asked__c_Year~~~Opportunity.AQC_Date_Asked__c_Month~~~Opportunity.AQC_Date_Asked__c_Day</field>
+        <isDerived>false</isDerived>
+        <label>Date Asked</label>
+        <sortIndex>4</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Med_Adv___Solicited__1.Opportunity.Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Opportunity.Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>Opportunity.Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>5</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Med_Adv___Solicited__1.Account.Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Account.Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>Account.Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>6</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Med_Adv___Solicited__3.AQC_Date_Asked__c_Year~~~AQC_Date_Asked__c_Month~~~AQC_Date_Asked__c_Day</field>
+        <isDerived>false</isDerived>
+        <label>Date Asked</label>
+        <sortIndex>7</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Med_Adv___Solicited__3.Account.Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Account.Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>Account.Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>8</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Med_Adv___Solicited__3.Name</field>
+        <isDerived>false</isDerived>
+        <label>Opportunity Name</label>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>9</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Med_Adv___Solicited__3.OpportunityTeamMember.Name</field>
+        <isDerived>false</isDerived>
+        <label>OTM Name</label>
+        <sortIndex>10</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Med_Adv___Solicited__3.OpportunityTeamMember.TeamMemberRole</field>
+        <isDerived>false</isDerived>
+        <label>Role</label>
+        <sortIndex>11</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Med_GO___Solicited_b_1.OpportunityTeamMember.Name</field>
+        <isDerived>false</isDerived>
+        <label>Gift Officer</label>
+        <sortIndex>12</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>GO___Solicited_by_OT_2.AQC_Date_Asked__c_Year~~~AQC_Date_Asked__c_Month~~~AQC_Date_Asked__c_Day</field>
+        <isDerived>false</isDerived>
+        <label>Date Asked</label>
+        <sortIndex>13</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>GO___Solicited_by_OT_2.OpportunityTeamMember.Name</field>
+        <isDerived>false</isDerived>
+        <label>Gift Officer</label>
+        <sortIndex>14</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>GO___Solicited_by_OT_2.OpportunityTeamMember.TeamMemberRole</field>
+        <isDerived>false</isDerived>
+        <label>Role</label>
+        <sortIndex>15</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>GO___Solicited_by_OT_2.Name</field>
+        <isDerived>false</isDerived>
+        <label>Opportunity Name</label>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>16</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>GO___Solicited_by_OT_2.Account.Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Account.Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>Account.Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>17</sortIndex>
+    </dimensions>
+    <measures>
+        <field>Territories_Solicite_2.A</field>
+        <isDerived>false</isDerived>
+        <label>Count</label>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <field>Territories_Solicite_2.B</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Ask Amount</label>
+        <sortIndex>1</sortIndex>
+    </measures>
+    <measures>
+        <field>Territories_Solicite_3.A</field>
+        <isDerived>false</isDerived>
+        <label># Solicited</label>
+        <sortIndex>2</sortIndex>
+    </measures>
+    <measures>
+        <field>GO___Solicited_by_OT_1.% to Goal</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>3</sortIndex>
+    </measures>
+    <measures>
+        <field>Med_Adv___Solicited__1.B</field>
+        <isDerived>false</isDerived>
+        <label>Ask Amount</label>
+        <sortIndex>4</sortIndex>
+    </measures>
+    <measures>
+        <field>Med_Adv___Solicited__1.A</field>
+        <isDerived>false</isDerived>
+        <label>Count</label>
+        <sortIndex>5</sortIndex>
+    </measures>
+    <measures>
+        <field>Med_Adv___Solicited__3.B</field>
+        <isDerived>false</isDerived>
+        <label>Count</label>
+        <sortIndex>6</sortIndex>
+    </measures>
+    <measures>
+        <field>Med_Adv___Solicited__3.A</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Ask Amount</label>
+        <sortIndex>7</sortIndex>
+    </measures>
+    <measures>
+        <field>Med_GO___Solicited_b_1.% to Goal</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>8</sortIndex>
+    </measures>
+    <measures>
+        <field>Territories_Solicite_1.B</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>$ Solicited</label>
+        <sortIndex>9</sortIndex>
+    </measures>
+    <measures>
+        <field>Territories_Solicite_1.A</field>
+        <isDerived>false</isDerived>
+        <label># Solicited</label>
+        <sortIndex>10</sortIndex>
+    </measures>
+    <measures>
+        <field>Med_Adv___Solicited__2.% to Goal</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>11</sortIndex>
+    </measures>
+    <measures>
+        <field>PrG_New_Principal_Pa_1.A</field>
+        <isDerived>false</isDerived>
+        <label>New Principal Partner Prospects</label>
+        <sortIndex>12</sortIndex>
+    </measures>
+    <measures>
+        <field>PrG_New_Principal_Pa_1.B</field>
+        <isDerived>false</isDerived>
+        <label>Goal</label>
+        <sortIndex>13</sortIndex>
+    </measures>
+    <measures>
+        <field>PrG_New_Principal_Pa_1.C</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>% to Goal</label>
+        <sortIndex>14</sortIndex>
+    </measures>
+    <type>Asset</type>
+    <waveVisualization>P_M_Opportunities_Solicited_Count_Detail_2</waveVisualization>
+</WaveXmd>

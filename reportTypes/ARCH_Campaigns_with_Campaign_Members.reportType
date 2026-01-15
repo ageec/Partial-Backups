@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>Campaign</baseObject>
+    <category>campaigns</category>
+    <deployed>true</deployed>
+    <description>Campaigns with Campaign Members and Account information.</description>
+    <join>
+        <outerJoin>true</outerJoin>
+        <relationship>CampaignMembers</relationship>
+    </join>
+    <label>ARCH_Campaigns with Campaign Members</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Deprecated Accounts Solicited</displayNameOverride>
+            <field>AQB__AccountsSolicited__c</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Deprecated Est # of Campaign Member</displayNameOverride>
+            <field>AQB__EstimatedAccountsSolicited__c</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Deprecated Accounts Solicited Roll-Up</displayNameOverride>
+            <field>AQB__CountOfAccountsSolicited__c</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Active</displayNameOverride>
+            <field>IsActive</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Actual Cost in Campaign</displayNameOverride>
+            <field>ActualCost</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Budgeted Cost in Campaign</displayNameOverride>
+            <field>BudgetedCost</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign Appeal Budget</displayNameOverride>
+            <field>AQB__CampaignAppealBudget__c</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign External ID</displayNameOverride>
+            <field>AQB__CampaignExternalID__c</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign ID</displayNameOverride>
+            <field>Id</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign Member Type</displayNameOverride>
+            <field>CampaignMemberRecordType</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Campaign Name</displayNameOverride>
+            <field>Name</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign Owner</displayNameOverride>
+            <field>Owner</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign Record Type</displayNameOverride>
+            <field>RecordType</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Converted Leads in Campaign</displayNameOverride>
+            <field>NumberOfConvertedLeads</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created By</displayNameOverride>
+            <field>CreatedBy</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created Date</displayNameOverride>
+            <field>CreatedDate</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Days in Progress</displayNameOverride>
+            <field>AQB__DaysinProgress__c</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Description</displayNameOverride>
+            <field>Description</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor Goal</displayNameOverride>
+            <field>AQB__Donor_Goal__c</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>End Date</displayNameOverride>
+            <field>EndDate</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Event</displayNameOverride>
+            <field>AQB__Event__c</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Expected Response (%)</displayNameOverride>
+            <field>ExpectedResponse</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Expected Revenue in Campaign</displayNameOverride>
+            <field>ExpectedRevenue</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fundraising Campaign</displayNameOverride>
+            <field>AQB__CampaignFund__c</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Include in Annual Fund Dashboard</displayNameOverride>
+            <field>AQB__IncludeinAnnualFundDashboard__c</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Activity</displayNameOverride>
+            <field>LastActivityDate</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified By</displayNameOverride>
+            <field>LastModifiedBy</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified Date</displayNameOverride>
+            <field>LastModifiedDate</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Length in Days</displayNameOverride>
+            <field>AQB__LengthInDays__c</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Num Sent in Campaign</displayNameOverride>
+            <field>NumberSent</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunities in Campaign</displayNameOverride>
+            <field>NumberOfOpportunities</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Won Opportunities in Campaign</displayNameOverride>
+            <field>NumberOfWonOpportunities</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Parent Campaign</displayNameOverride>
+            <field>Parent</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Percent Complete</displayNameOverride>
+            <field>AQB__PercentComplete__c</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Percent of Days Past</displayNameOverride>
+            <field>AQB__PercentofDaysPast__c</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Response Rate Goal</displayNameOverride>
+            <field>AQB__ResponseRateGoal__c</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Revenue Goal</displayNameOverride>
+            <field>AQB__RevG__c</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Start Date</displayNameOverride>
+            <field>StartDate</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Status</displayNameOverride>
+            <field>Status</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Actual Cost in Hierarchy</displayNameOverride>
+            <field>HierarchyActualCost</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Budgeted Cost in Hierarchy</displayNameOverride>
+            <field>HierarchyBudgetedCost</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Total Campaign Appeal Expenses</displayNameOverride>
+            <field>AQB__TotalCampaignAppealExpenses__c</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Contacts in Campaign</displayNameOverride>
+            <field>NumberOfContacts</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Contacts in Hierarchy</displayNameOverride>
+            <field>HierarchyNumberOfContacts</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Converted Leads in Hierarchy</displayNameOverride>
+            <field>HierarchyNumberOfConvertedLeads</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Expected Revenue in Hierarchy</displayNameOverride>
+            <field>HierarchyExpectedRevenue</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Leads in Campaign</displayNameOverride>
+            <field>NumberOfLeads</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Leads in Hierarchy</displayNameOverride>
+            <field>HierarchyNumberOfLeads</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Num Sent in Hierarchy</displayNameOverride>
+            <field>HierarchyNumberSent</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Total Open Opportunities</displayNameOverride>
+            <field>AQB__TotalOpenOpportunities__c</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunities in Hierarchy</displayNameOverride>
+            <field>HierarchyNumberOfOpportunities</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Responses in Campaign</displayNameOverride>
+            <field>NumberOfResponses</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Responses in Hierarchy</displayNameOverride>
+            <field>HierarchyNumberOfResponses</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Value Opportunities in Campaign</displayNameOverride>
+            <field>AmountAllOpportunities</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Value Opportunities in Hierarchy</displayNameOverride>
+            <field>HierarchyAmountAllOpportunities</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Value Won Opportunities in Campaign</displayNameOverride>
+            <field>AmountWonOpportunities</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Value Won Opportunities in Hierarchy</displayNameOverride>
+            <field>HierarchyAmountWonOpportunities</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Won Opportunities in Hierarchy</displayNameOverride>
+            <field>HierarchyNumberOfWonOpportunities</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Type</displayNameOverride>
+            <field>Type</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Is Primary</displayNameOverride>
+            <field>IsPrimary</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>CombineNamesRunning</displayNameOverride>
+            <field>AQB__CombineNamesRunning__c</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Do Not Save</displayNameOverride>
+            <field>ARCH_Do_Not_Save__c</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Most Recent Gift Date</displayNameOverride>
+            <field>ARCH_MostRecentGiftDate__c</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Most Recent Gift Date is Today</displayNameOverride>
+            <field>ARCH_MostRecentGiftDate_isToday__c</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ARCH_Quorum_Campaign__c</field>
+            <table>Campaign</table>
+        </columns>
+        <masterLabel>Campaigns</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Account</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AQB__Active__c</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>CampaignMember-ContactOrLead : Account : ARCH Account ID</displayNameOverride>
+            <field>Account.AQC_Account_ARCH_ID__c</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Contact : Account Name : ARCH Account ID</displayNameOverride>
+            <field>Contact.Account.AQC_Account_ARCH_ID__c</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Contact : ARCH Contact ID</displayNameOverride>
+            <field>Contact.AQC_Contact_ARCH_ID__c</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ARCH_Comment__c</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>CampaignMember-ContactOrLead : Preference Contact : Contact ID</displayNameOverride>
+            <field>AQB__PreferenceContact__c.Id</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created By</displayNameOverride>
+            <field>CreatedBy</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created Date</displayNameOverride>
+            <field>CreatedDate</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Do Not Call</displayNameOverride>
+            <field>DoNotCall</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Email</displayNameOverride>
+            <field>Email</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Email Opt Out</displayNameOverride>
+            <field>HasOptedOutOfEmail</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fax</displayNameOverride>
+            <field>Fax</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>First Name</displayNameOverride>
+            <field>FirstName</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Full Name</displayNameOverride>
+            <field>Name</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Contact : Account Name : Relationship Manager : Full Name</displayNameOverride>
+            <field>Contact.Account.AQC_RelationshipManager__c.Name</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified By</displayNameOverride>
+            <field>LastModifiedBy</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified Date</displayNameOverride>
+            <field>LastModifiedDate</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Name</displayNameOverride>
+            <field>LastName</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Member First Associated Date</displayNameOverride>
+            <field>MemberCreatedDate</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Member ID</displayNameOverride>
+            <field>MemberId</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Member Status Update Date</displayNameOverride>
+            <field>MemberLastModifiedDate</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Mobile</displayNameOverride>
+            <field>MobilePhone</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Phone</displayNameOverride>
+            <field>Phone</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Contact : Account Name : Primary Gift Officer</displayNameOverride>
+            <field>Contact.Account.ARCH_PrimaryGiftOfficer__c</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Related Record ID</displayNameOverride>
+            <field>Id</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Responded</displayNameOverride>
+            <field>HasResponded</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AQB__StartDate__c</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Status</displayNameOverride>
+            <field>Status</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AQB__StopDate__c</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Title</displayNameOverride>
+            <field>Title</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contact.AQB__Greeting__c</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contact.Account</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <masterLabel>Campaign Members</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contact.AQC_EducationA__c.ARCH_Discipline__c</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contact.AQC_EducationB__c.ARCH_Discipline__c</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contact.AQC_EducationC__c.ARCH_Discipline__c</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contact.AQC_EducationD__c.ARCH_Discipline__c</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contact.AQC_EducationE__c.ARCH_Discipline__c</field>
+            <table>Campaign.CampaignMembers</table>
+        </columns>
+        <masterLabel>Education</masterLabel>
+    </sections>
+</ReportType>
