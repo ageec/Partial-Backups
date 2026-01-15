@@ -1,0 +1,926 @@
+{
+    "version": "64.0",
+    "nodes": {
+        "JOIN1": {
+            "action": "join",
+            "parameters": {
+                "joinType": "LOOKUP",
+                "leftKeys": [
+                    "AQB__AccountId__c"
+                ],
+                "rightKeys": [
+                    "Id"
+                ],
+                "rightQualifier": "Account"
+            },
+            "schema": {
+                "fields": [],
+                "slice": {
+                    "fields": [],
+                    "ignoreMissingFields": true,
+                    "mode": "DROP"
+                }
+            },
+            "sources": [
+                "JOIN2",
+                "LOAD_DATASET7"
+            ]
+        },
+        "OUTPUT0": {
+            "action": "save",
+            "parameters": {
+                "dataset": {
+                    "folderName": "SharedApp",
+                    "label": "PM Team",
+                    "name": "PMTeam",
+                    "type": "analyticsDataset"
+                },
+                "dateConfigurationName": "July_To_June_Fiscal_Year",
+                "fields": [],
+                "measuresToCurrencies": []
+            },
+            "sources": [
+                "FORMULA16"
+            ]
+        },
+        "LOAD_DATASET5": {
+            "action": "load",
+            "parameters": {
+                "dataset": {
+                    "connectionName": "SFDC_LOCAL",
+                    "label": "AQB__PMTeam__c",
+                    "sourceObjectName": "AQB__PMTeam__c",
+                    "type": "connectedDataset"
+                },
+                "fields": [
+                    "AQB__StartDate__c",
+                    "Id",
+                    "AQB__AccountId__c",
+                    "AQB__Active__c",
+                    "AQB__EndDate__c",
+                    "AQB__Role__c",
+                    "AQB__User__c"
+                ],
+                "preserveCurrencyFields": [],
+                "sampleDetails": {
+                    "sortBy": [],
+                    "type": "TopN"
+                }
+            },
+            "sources": []
+        },
+        "LOAD_DATASET6": {
+            "action": "load",
+            "parameters": {
+                "dataset": {
+                    "connectionName": "SFDC_LOCAL",
+                    "label": "User",
+                    "sourceObjectName": "User",
+                    "type": "connectedDataset"
+                },
+                "fields": [
+                    "ARCH_Primary_Fundraising_Lane__c",
+                    "Id",
+                    "Username",
+                    "LastName",
+                    "FirstName",
+                    "Name",
+                    "CompanyName",
+                    "Division",
+                    "Department",
+                    "Title",
+                    "Street",
+                    "City",
+                    "State",
+                    "PostalCode",
+                    "Country",
+                    "Email",
+                    "Phone",
+                    "MobilePhone",
+                    "Alias",
+                    "CommunityNickname",
+                    "IsActive",
+                    "TimeZoneSidKey",
+                    "UserRoleId",
+                    "ProfileId",
+                    "UserType",
+                    "SmallPhotoUrl",
+                    "ARCH_UA_Territory__c"
+                ],
+                "preserveCurrencyFields": [],
+                "sampleDetails": {
+                    "sortBy": [],
+                    "type": "TopN"
+                }
+            },
+            "sources": []
+        },
+        "JOIN2": {
+            "action": "join",
+            "parameters": {
+                "joinType": "LOOKUP",
+                "leftKeys": [
+                    "AQB__User__c"
+                ],
+                "rightKeys": [
+                    "Id"
+                ],
+                "rightQualifier": "User"
+            },
+            "schema": {
+                "fields": [],
+                "slice": {
+                    "fields": [],
+                    "ignoreMissingFields": true,
+                    "mode": "DROP"
+                }
+            },
+            "sources": [
+                "LOAD_DATASET5",
+                "EDIT_ATTRIBUTES6"
+            ]
+        },
+        "FORMULA0": {
+            "action": "formula",
+            "parameters": {
+                "expressionType": "SQL",
+                "fields": [
+                    {
+                        "defaultValue": "",
+                        "formulaExpression": "case \r\n\twhen AQB__Role__c = 'Relationship Manager'\r\n\tthen concat(\"User.Name\",'-','Primary Portfolio','/',\"User.Name\",'-','Total Portfolio')\r\n    when AQB__Role__c = 'Proxy Officer'\r\n    then concat(\"User.Name\",'-','Primary Portfolio','/',\"User.Name\",'-','Total Portfolio')\r\n    when AQB__Role__c = 'Annual Giving Officer'\r\n    then concat(\"User.Name\",'-','Primary Portfolio','/',\"User.Name\",'-','Total Portfolio')\r\n    when AQB__Role__c = 'Qualifying Gift Officer'\r\n    then concat(\"User.Name\",'-','Qualification Portfolio','/',\"User.Name\",'-','Total Portfolio')\r\n    when AQB__Role__c = 'Annual Giving Pipeline Officer'\r\n    then concat(\"User.Name\",'-','Qualification Portfolio','/',\"User.Name\",'-','Total Portfolio')\r\n\telse\r\n\tconcat(\"User.Name\",'-','Total Portfolio')\r\nend",
+                        "label": "RMT Role Group",
+                        "name": "RMTRoleGroup",
+                        "precision": 255,
+                        "type": "TEXT"
+                    }
+                ]
+            },
+            "sources": [
+                "JOIN1"
+            ]
+        },
+        "FORMULA1": {
+            "action": "formula",
+            "parameters": {
+                "expressionType": "SQL",
+                "fields": [
+                    {
+                        "formulaExpression": "split(RMTRoleGroup,'/')",
+                        "label": "RMT Member Name + Role Group 2 Multivalue",
+                        "name": "RMT_Member_Name_Role_Group2_Multivalue",
+                        "type": "MULTIVALUE"
+                    }
+                ]
+            },
+            "sources": [
+                "FORMULA0"
+            ]
+        },
+        "FORMULA2": {
+            "action": "computeRelative",
+            "parameters": {
+                "expressionType": "SQL",
+                "fields": [
+                    {
+                        "defaultValue": "",
+                        "formulaExpression": "case\r\n    when AQB__Active__c = 'true' and AQB__Role__c not in ('Relationship Manager', 'Proxy Officer', 'Annual Giving Officer', 'Qualifying Gift Officer', 'Annual Giving Pipeline Officer') then row_number()\r\n    else 0\r\n    end",
+                        "label": "Secondary Role Same Type Row Number",
+                        "name": "Secondary_Role_Same_Type_Row_Number",
+                        "precision": 10,
+                        "scale": 0,
+                        "type": "NUMBER"
+                    }
+                ],
+                "orderBy": [
+                    {
+                        "direction": "ASC",
+                        "fieldName": "AQB__StartDate__c"
+                    }
+                ],
+                "partitionBy": [
+                    "Account_Role"
+                ]
+            },
+            "sources": [
+                "FORMULA5"
+            ]
+        },
+        "FORMULA4": {
+            "action": "computeRelative",
+            "parameters": {
+                "expressionType": "SQL",
+                "fields": [
+                    {
+                        "defaultValue": "",
+                        "formulaExpression": "last_value(Secondary_Role_Same_Type_Row_Number)",
+                        "label": "Secondary Role Same Type Row Number Last Value",
+                        "name": "Secondary_Role_Same_Type_Row_Number_Last_Value",
+                        "precision": 10,
+                        "scale": 0,
+                        "type": "NUMBER"
+                    }
+                ],
+                "orderBy": [
+                    {
+                        "direction": "ASC",
+                        "fieldName": "Secondary_Role_Same_Type_Row_Number"
+                    }
+                ],
+                "partitionBy": [
+                    "Account_Role"
+                ]
+            },
+            "sources": [
+                "FORMULA2"
+            ]
+        },
+        "FORMULA5": {
+            "action": "formula",
+            "parameters": {
+                "expressionType": "SQL",
+                "fields": [
+                    {
+                        "defaultValue": "",
+                        "formulaExpression": "case \r\n    when AQB__Active__c = 'true' then concat(\"Account.Id\", \"AQB__Role__c\")\r\n    else ''\r\n    end",
+                        "label": "Account + Role",
+                        "name": "Account_Role",
+                        "precision": 255,
+                        "type": "TEXT"
+                    }
+                ]
+            },
+            "sources": [
+                "FORMULA11"
+            ]
+        },
+        "EDIT_ATTRIBUTES0": {
+            "action": "schema",
+            "parameters": {
+                "fields": [
+                    {
+                        "name": "Account.Name",
+                        "newProperties": {
+                            "label": "Account Name",
+                            "name": "AccountInfo.Account.Name"
+                        }
+                    }
+                ]
+            },
+            "sources": [
+                "FORMULA4"
+            ]
+        },
+        "EDIT_ATTRIBUTES1": {
+            "action": "schema",
+            "parameters": {
+                "fields": [
+                    {
+                        "name": "Account.ARCH_Metro_Area__c",
+                        "newProperties": {
+                            "label": "Metro Area",
+                            "name": "AccountInfo.Account.ARCH_Metro_Area__c"
+                        }
+                    }
+                ]
+            },
+            "sources": [
+                "EDIT_ATTRIBUTES0"
+            ]
+        },
+        "EDIT_ATTRIBUTES2": {
+            "action": "schema",
+            "parameters": {
+                "fields": [
+                    {
+                        "name": "Account.ARCH_Account_ID__c",
+                        "newProperties": {
+                            "label": "ARCH Account ID",
+                            "name": "AccountInfo.Account.ARCH_Account_ID__c"
+                        }
+                    }
+                ]
+            },
+            "sources": [
+                "EDIT_ATTRIBUTES1"
+            ]
+        },
+        "EDIT_ATTRIBUTES3": {
+            "action": "schema",
+            "parameters": {
+                "fields": [
+                    {
+                        "name": "Account.ARCH_Territory__c",
+                        "newProperties": {
+                            "label": "Territory",
+                            "name": "AccountInfo.Account.ARCH_Territory__c"
+                        }
+                    }
+                ]
+            },
+            "sources": [
+                "EDIT_ATTRIBUTES2"
+            ]
+        },
+        "EDIT_ATTRIBUTES4": {
+            "action": "schema",
+            "parameters": {
+                "fields": [
+                    {
+                        "name": "Account.Id",
+                        "newProperties": {
+                            "label": "Account Id",
+                            "name": "AccountInfo.Account.Id"
+                        }
+                    }
+                ]
+            },
+            "sources": [
+                "EDIT_ATTRIBUTES3"
+            ]
+        },
+        "EDIT_ATTRIBUTES5": {
+            "action": "schema",
+            "parameters": {
+                "fields": [
+                    {
+                        "name": "Account.ARCH_MedProspect__c",
+                        "newProperties": {
+                            "label": "Med Prospect",
+                            "name": "AccountInfo.Account.ARCH_MedProspect__c"
+                        }
+                    }
+                ]
+            },
+            "sources": [
+                "EDIT_ATTRIBUTES4"
+            ]
+        },
+        "FORMULA6": {
+            "action": "formula",
+            "parameters": {
+                "expressionType": "SQL",
+                "fields": [
+                    {
+                        "defaultValue": "",
+                        "formulaExpression": "case \"User.IsActive\"\r\n    when 'true'\r\n    then \"User.Name\"\r\n    else ''\r\nend",
+                        "label": "RMT Member Name Active",
+                        "name": "RMTMemberNameActive",
+                        "precision": 255,
+                        "type": "TEXT"
+                    }
+                ]
+            },
+            "sources": [
+                "FORMULA1"
+            ]
+        },
+        "FORMULA7": {
+            "action": "formula",
+            "parameters": {
+                "expressionType": "SQL",
+                "fields": [
+                    {
+                        "defaultValue": "",
+                        "formulaExpression": "case \r\n    when AQB__Active__c = 'true'\r\n    then AQB__Role__c\r\n    else\r\n    ''\r\nend",
+                        "label": "RMT Member Role Active",
+                        "name": "RMTMemberRoleActive",
+                        "precision": 255,
+                        "type": "TEXT"
+                    }
+                ]
+            },
+            "sources": [
+                "FORMULA6"
+            ]
+        },
+        "FORMULA8": {
+            "action": "formula",
+            "parameters": {
+                "expressionType": "SQL",
+                "fields": [
+                    {
+                        "defaultValue": "",
+                        "formulaExpression": "case \r\n\twhen RMTMemberRoleActive = 'Relationship Manager' and char_length(RMTMemberNameActive) > 0\r\n\tthen concat(\"RMTMemberNameActive\",'-','Primary Portfolio','/',\"RMTMemberNameActive\",'-','Total Portfolio')\r\n    when RMTMemberRoleActive = 'Proxy Officer' and char_length(RMTMemberNameActive) > 0 \r\n    then concat(\"RMTMemberNameActive\",'-','Primary Portfolio','/',\"RMTMemberNameActive\",'-','Total Portfolio')\r\n    when RMTMemberRoleActive = 'Annual Giving Officer' and char_length(RMTMemberNameActive) > 0\r\n    then concat(\"RMTMemberNameActive\",'-','Primary Portfolio','/',\"RMTMemberNameActive\",'-','Total Portfolio')\r\n    when RMTMemberRoleActive = 'Qualifying Gift Officer' and char_length(RMTMemberNameActive) > 0\r\n    then concat(\"RMTMemberNameActive\",'-','Qualification Portfolio','/',\"RMTMemberNameActive\",'-','Total Portfolio')\r\n    when RMTMemberRoleActive = 'Annual Giving Pipeline Officer' and char_length(RMTMemberNameActive) > 0\r\n    then concat(\"RMTMemberNameActive\",'-','Qualification Portfolio','/',\"RMTMemberNameActive\",'-','Total Portfolio')\r\n    when char_length(RMTMemberRoleActive) > 0 and RMTMemberRoleActive not in ('Relationship Manager', 'Proxy Officer', 'Annual Giving Officer', 'Qualifying Gift Officer', 'Annual Giving Pipeline Officer') and char_length(RMTMemberNameActive) > 0\r\n    then concat(\"RMTMemberNameActive\",'-','Total Portfolio')\r\n\telse ''\r\nend",
+                        "label": "RMT Member Name + Role Group Active",
+                        "name": "RMT_Member_Name_Role_GroupActive",
+                        "precision": 255,
+                        "type": "TEXT"
+                    }
+                ]
+            },
+            "sources": [
+                "FORMULA7"
+            ]
+        },
+        "FORMULA9": {
+            "action": "formula",
+            "parameters": {
+                "expressionType": "SQL",
+                "fields": [
+                    {
+                        "formulaExpression": "split(RMT_Member_Name_Role_GroupActive,'/')",
+                        "label": "RMT Member Name + Role Group Active Multivalue",
+                        "name": "RMT_Member_Name_Role_Group_Active_Multivalue",
+                        "type": "MULTIVALUE"
+                    }
+                ]
+            },
+            "sources": [
+                "FORMULA8"
+            ]
+        },
+        "FORMULA10": {
+            "action": "formula",
+            "parameters": {
+                "expressionType": "SQL",
+                "fields": [
+                    {
+                        "defaultValue": "",
+                        "formulaExpression": "case\r\n    when char_length(RMTMemberRoleActive) > 0 and char_length(RMTMemberNameActive) > 0\r\n    then concat(\"RMTMemberNameActive\",' - ',RMTMemberRoleActive)\r\n    else ''\r\n    end",
+                        "label": "RMT Member Name+Role Active",
+                        "name": "RMT_Member_Name_Role_Active",
+                        "precision": 255,
+                        "type": "TEXT"
+                    }
+                ]
+            },
+            "sources": [
+                "FORMULA9"
+            ]
+        },
+        "FORMULA11": {
+            "action": "formula",
+            "parameters": {
+                "expressionType": "SQL",
+                "fields": [
+                    {
+                        "defaultValue": "",
+                        "formulaExpression": "concat(\"User.Name\",' - ',AQB__Role__c)",
+                        "label": "RMT Member Name+Role",
+                        "name": "RMT_Member_Name_Role",
+                        "precision": 255,
+                        "type": "TEXT"
+                    }
+                ]
+            },
+            "sources": [
+                "FORMULA10"
+            ]
+        },
+        "FORMULA13": {
+            "action": "formula",
+            "parameters": {
+                "expressionType": "SQL",
+                "fields": [
+                    {
+                        "defaultValue": "",
+                        "formulaExpression": "case \r\n    when \"Account.ARCH_Notes_and_Comments__c\" is null\r\n    then 0\r\n    else\r\n    1\r\nend",
+                        "label": "Account Active Strategy Plan Count",
+                        "name": "Account_Active_Strategy_Plan_Count",
+                        "precision": 10,
+                        "scale": 0,
+                        "type": "NUMBER"
+                    }
+                ]
+            },
+            "sources": [
+                "EDIT_ATTRIBUTES5"
+            ]
+        },
+        "FORMULA14": {
+            "action": "formula",
+            "parameters": {
+                "expressionType": "SQL",
+                "fields": [
+                    {
+                        "defaultValue": "",
+                        "formulaExpression": "case \r\n    when \"Account.ARCH_Notes_and_Comments__c\" is null\r\n    then 1\r\n    else\r\n    0\r\nend",
+                        "label": "Account Inactive Strategy Plan Count",
+                        "name": "Account_Inactive_Strategy_Plan_Count",
+                        "precision": 10,
+                        "scale": 0,
+                        "type": "NUMBER"
+                    }
+                ]
+            },
+            "sources": [
+                "FORMULA13"
+            ]
+        },
+        "FORMULA16": {
+            "action": "formula",
+            "parameters": {
+                "expressionType": "SQL",
+                "fields": [
+                    {
+                        "defaultValue": "",
+                        "formulaExpression": "string(fiscalYear(current_date())-fiscalYear(\"Account.AQB__ProspectStatusDate__c\"))",
+                        "label": "Prospect Date Fiscal Years Passed",
+                        "name": "Prospect_Date_Fiscal_Years_Passed",
+                        "precision": 255,
+                        "type": "TEXT"
+                    }
+                ]
+            },
+            "sources": [
+                "FORMULA14"
+            ]
+        },
+        "LOAD_DATASET7": {
+            "action": "load",
+            "parameters": {
+                "dataset": {
+                    "label": "Account",
+                    "name": "Account",
+                    "type": "analyticsDataset"
+                },
+                "fields": [
+                    "PrimaryGiftOfficerRMT.AQB__Role__c",
+                    "PrimaryGiftOfficer.WUSTLKey",
+                    "PrimaryGiftOfficerRMT.Name",
+                    "PrimaryGiftOfficerId",
+                    "PrimaryGiftOfficer.Name",
+                    "ARCH_Metro_Area__c",
+                    "ARCH_Account_ID__c",
+                    "Id",
+                    "ARCH_Notes_and_Comments__c",
+                    "AQB__Capacity__c",
+                    "ActiveStrategyPlan.ActiveStrategyPlan",
+                    "AQB__SecondaryTypes__c",
+                    "AQB__ProspectStatusDate__c",
+                    "PrimaryContact.Name",
+                    "AQB__AccountType__c",
+                    "Secondary_Account_Types_List",
+                    "AQB__PrimaryContact__c",
+                    "Name",
+                    "AQB__ProspectStatus__c",
+                    "ARCH_Territory__c",
+                    "ARCH_MedProspect__c",
+                    "BillingCountryNameCleanup",
+                    "PrimaryGiftOfficer.GiftOfficerTeam",
+                    "ARCH_Capacity_Conversion__c"
+                ],
+                "preserveCurrencyFields": [],
+                "sampleDetails": {
+                    "sortBy": [],
+                    "type": "TopN"
+                }
+            },
+            "sources": []
+        },
+        "FORMULA12": {
+            "action": "formula",
+            "parameters": {
+                "expressionType": "SQL",
+                "fields": [
+                    {
+                        "defaultValue": "",
+                        "formulaExpression": "case\r\nwhen Division = 'Arts & Sciences' then 'A&S'\r\nwhen Division = 'Brown School' then 'Brown'\r\nwhen Division = 'McKelvey Engineering' then 'McKelvey'\r\nwhen Division = 'Olin Business School' then 'Olin'\r\nwhen Division = 'Parent and Student Initiatives' then 'Parent & Student Initiatives'\r\nwhen Division = 'Public Health' then 'Public Health'\r\nwhen Division = 'Sam Fox School' then 'Sam Fox'\r\nwhen Division = 'School of Continuing & Professional Studies' then 'CAPS'\r\nwhen Division = 'School of Law' then 'Law'\r\nwhen Division in ('WashU Priorities', 'Danforth and University Initiatives') then 'Danforth & University Initiatives'\r\nend",
+                        "label": "Gift Officer Divsion",
+                        "name": "GiftOfficerDivision",
+                        "precision": 255,
+                        "type": "TEXT"
+                    }
+                ]
+            },
+            "sources": [
+                "LOAD_DATASET6"
+            ]
+        },
+        "FORMULA15": {
+            "action": "formula",
+            "parameters": {
+                "expressionType": "SQL",
+                "fields": [
+                    {
+                        "defaultValue": "",
+                        "formulaExpression": "case\r\nwhen \"Division\" = 'Danforth Corporate Relations' then 'Corporate Rel'\r\nwhen \"Division\" = 'Danforth Foundation Relations' then 'Foundation Rel'\r\nwhen \"Division\" = 'International Advancement' then 'International'\r\nwhen \"Division\" = 'Planned Giving' then 'PG'\r\nwhen \"Division\" = 'Individual Giving' AND \"ARCH_UA_Territory__c\" = 'Central' then 'IG Central'\r\nwhen \"Division\" = 'Individual Giving' AND \"ARCH_UA_Territory__c\" = 'East' then 'IG East'\r\nwhen \"Division\" = 'Individual Giving' AND \"ARCH_UA_Territory__c\" = 'Missouri' then 'IG Missouri'\r\nwhen \"Division\" = 'Individual Giving' AND \"ARCH_UA_Territory__c\" = 'West' then 'IG West'\r\nwhen \"Division\" = 'Alumni & Programs' then 'Med Alumni'\r\nwhen \"Division\" = 'Patients & Friends (Med/Surg)' then 'Med/Surg'\r\nwhen \"Division\" = 'Patients & Friends (Neuro)' then 'Neuro'\r\nwhen \"Division\" = 'Medical Corporate and Foundation Relations' then 'Med CFR'\r\nwhen \"Division\" = 'Siteman' then 'Siteman'\r\nwhen \"Division\" = 'VC Office' then 'Med UA VC Office'\r\nwhen Division = 'Individual Giving VC' then 'Dev Vertical'\r\nend",
+                        "label": "Gift Officer Team",
+                        "name": "GiftOfficerTeam",
+                        "precision": 255,
+                        "type": "TEXT"
+                    }
+                ]
+            },
+            "sources": [
+                "FORMULA12"
+            ]
+        },
+        "EDIT_ATTRIBUTES6": {
+            "action": "schema",
+            "parameters": {
+                "fields": [
+                    {
+                        "name": "Name",
+                        "newProperties": {
+                            "label": "Gift Officer Name",
+                            "name": "Name"
+                        }
+                    }
+                ]
+            },
+            "sources": [
+                "FORMULA15"
+            ]
+        }
+    },
+    "ui": {
+        "nodes": {
+            "JOIN1": {
+                "label": "Lookup Account",
+                "description": "",
+                "type": "JOIN",
+                "top": 112.30000000000001,
+                "left": 392.1
+            },
+            "OUTPUT0": {
+                "label": "PM Team",
+                "description": "",
+                "type": "OUTPUT",
+                "top": 112.4,
+                "left": 810.4
+            },
+            "LOAD_DATASET5": {
+                "label": "AQB__PMTeam__c",
+                "type": "LOAD_DATASET",
+                "top": 112.4,
+                "left": 112.5,
+                "parameters": {
+                    "sampleSize": 2000
+                }
+            },
+            "LOAD_DATASET6": {
+                "label": "User",
+                "type": "LOAD_DATASET",
+                "top": 393.9,
+                "left": 252.10000000000002,
+                "parameters": {
+                    "sampleSize": 2000
+                }
+            },
+            "JOIN2": {
+                "label": "Lookup User",
+                "description": "",
+                "type": "JOIN",
+                "top": 112.1,
+                "left": 252
+            },
+            "TRANSFORM0": {
+                "label": "Enrich PM Team",
+                "description": "",
+                "type": "TRANSFORM",
+                "top": 112.30000000000001,
+                "left": 671.3,
+                "graph": {
+                    "FORMULA0": {
+                        "parameters": {
+                            "type": "BASE_FORMULA_UI"
+                        },
+                        "label": "RMT Role Group"
+                    },
+                    "FORMULA1": {
+                        "parameters": {
+                            "type": "BASE_FORMULA_UI"
+                        },
+                        "label": "RMT Member Name + Role Group 2 Multivalue"
+                    },
+                    "FORMULA2": {
+                        "label": "Secondary Roles of the Same Type Role Number"
+                    },
+                    "FORMULA4": {
+                        "label": "Secondary Role Same Type Row Number Last Value"
+                    },
+                    "FORMULA5": {
+                        "parameters": {
+                            "type": "BASE_FORMULA_UI"
+                        },
+                        "label": "Contcat Account + Role"
+                    },
+                    "EDIT_ATTRIBUTES0": {
+                        "label": "Edit Attributes"
+                    },
+                    "EDIT_ATTRIBUTES1": {
+                        "label": "Edit Attributes"
+                    },
+                    "EDIT_ATTRIBUTES2": {
+                        "label": "Edit Attributes"
+                    },
+                    "EDIT_ATTRIBUTES3": {
+                        "label": "Edit Attributes"
+                    },
+                    "EDIT_ATTRIBUTES4": {
+                        "label": "Edit Attributes"
+                    },
+                    "EDIT_ATTRIBUTES5": {
+                        "label": "Edit Attributes"
+                    },
+                    "FORMULA6": {
+                        "parameters": {
+                            "type": "BASE_FORMULA_UI"
+                        },
+                        "label": "RMT Member Name Active"
+                    },
+                    "FORMULA7": {
+                        "parameters": {
+                            "type": "BASE_FORMULA_UI"
+                        },
+                        "label": "RMT Member Role Active"
+                    },
+                    "FORMULA8": {
+                        "parameters": {
+                            "type": "BASE_FORMULA_UI"
+                        },
+                        "label": "RMT Member Name + Role Group Active"
+                    },
+                    "FORMULA9": {
+                        "parameters": {
+                            "type": "BASE_FORMULA_UI"
+                        },
+                        "label": "RMT Member Name + Role Group Active Multivalue"
+                    },
+                    "FORMULA10": {
+                        "parameters": {
+                            "type": "BASE_FORMULA_UI"
+                        },
+                        "label": "RMT Member Name+Role Active"
+                    },
+                    "FORMULA11": {
+                        "parameters": {
+                            "type": "BASE_FORMULA_UI"
+                        },
+                        "label": "RMT Member Name+Role"
+                    },
+                    "FORMULA13": {
+                        "parameters": {
+                            "type": "BASE_FORMULA_UI"
+                        },
+                        "label": "Account Active Strategy Plan Count"
+                    },
+                    "FORMULA14": {
+                        "parameters": {
+                            "type": "BASE_FORMULA_UI"
+                        },
+                        "label": "Account Inactive Strategy Plan Count"
+                    },
+                    "FORMULA16": {
+                        "parameters": {
+                            "type": "BASE_FORMULA_UI"
+                        },
+                        "label": "Prospect Date Fiscal Years Passed"
+                    }
+                },
+                "connectors": [
+                    {
+                        "source": "FORMULA0",
+                        "target": "FORMULA1"
+                    },
+                    {
+                        "source": "FORMULA2",
+                        "target": "FORMULA4"
+                    },
+                    {
+                        "source": "FORMULA5",
+                        "target": "FORMULA2"
+                    },
+                    {
+                        "source": "FORMULA4",
+                        "target": "EDIT_ATTRIBUTES0"
+                    },
+                    {
+                        "source": "EDIT_ATTRIBUTES0",
+                        "target": "EDIT_ATTRIBUTES1"
+                    },
+                    {
+                        "source": "EDIT_ATTRIBUTES1",
+                        "target": "EDIT_ATTRIBUTES2"
+                    },
+                    {
+                        "source": "EDIT_ATTRIBUTES2",
+                        "target": "EDIT_ATTRIBUTES3"
+                    },
+                    {
+                        "source": "EDIT_ATTRIBUTES3",
+                        "target": "EDIT_ATTRIBUTES4"
+                    },
+                    {
+                        "source": "EDIT_ATTRIBUTES4",
+                        "target": "EDIT_ATTRIBUTES5"
+                    },
+                    {
+                        "source": "FORMULA1",
+                        "target": "FORMULA6"
+                    },
+                    {
+                        "source": "FORMULA6",
+                        "target": "FORMULA7"
+                    },
+                    {
+                        "source": "FORMULA7",
+                        "target": "FORMULA8"
+                    },
+                    {
+                        "source": "FORMULA8",
+                        "target": "FORMULA9"
+                    },
+                    {
+                        "source": "FORMULA9",
+                        "target": "FORMULA10"
+                    },
+                    {
+                        "source": "FORMULA11",
+                        "target": "FORMULA5"
+                    },
+                    {
+                        "source": "FORMULA10",
+                        "target": "FORMULA11"
+                    },
+                    {
+                        "source": "EDIT_ATTRIBUTES5",
+                        "target": "FORMULA13"
+                    },
+                    {
+                        "source": "FORMULA13",
+                        "target": "FORMULA14"
+                    },
+                    {
+                        "source": "FORMULA14",
+                        "target": "FORMULA16"
+                    }
+                ]
+            },
+            "LOAD_DATASET7": {
+                "label": "Account",
+                "type": "LOAD_DATASET",
+                "top": 252,
+                "left": 392.2,
+                "parameters": {
+                    "sampleSize": 2000
+                }
+            },
+            "TRANSFORM1": {
+                "label": "Enrich User",
+                "type": "TRANSFORM",
+                "top": 252.10000000000002,
+                "left": 252,
+                "graph": {
+                    "FORMULA12": {
+                        "parameters": {
+                            "type": "BASE_FORMULA_UI"
+                        },
+                        "label": "Gift Officer Divsion"
+                    },
+                    "FORMULA15": {
+                        "parameters": {
+                            "type": "BASE_FORMULA_UI"
+                        },
+                        "label": "Gift Officer Team"
+                    },
+                    "EDIT_ATTRIBUTES6": {
+                        "label": "Edit Attributes Full Name"
+                    }
+                },
+                "connectors": [
+                    {
+                        "source": "FORMULA12",
+                        "target": "FORMULA15"
+                    },
+                    {
+                        "source": "FORMULA15",
+                        "target": "EDIT_ATTRIBUTES6"
+                    }
+                ]
+            }
+        },
+        "connectors": [
+            {
+                "source": "JOIN2",
+                "target": "JOIN1"
+            },
+            {
+                "source": "LOAD_DATASET5",
+                "target": "JOIN2"
+            },
+            {
+                "source": "TRANSFORM1",
+                "target": "JOIN2"
+            },
+            {
+                "source": "TRANSFORM0",
+                "target": "OUTPUT0"
+            },
+            {
+                "source": "JOIN1",
+                "target": "TRANSFORM0"
+            },
+            {
+                "source": "LOAD_DATASET7",
+                "target": "JOIN1"
+            },
+            {
+                "source": "LOAD_DATASET6",
+                "target": "TRANSFORM1"
+            }
+        ],
+        "hiddenColumns": []
+    }
+}
