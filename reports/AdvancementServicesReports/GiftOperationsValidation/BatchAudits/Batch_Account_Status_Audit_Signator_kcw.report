@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>AQB__Batch__c$ARCH_Batch_Status__c</field>
+    </columns>
+    <columns>
+        <field>AQB__Batch__c$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>AQB__Batch__c.AQB__Batch_Items__r$Name</field>
+    </columns>
+    <columns>
+        <field>AQB__Batch__c.AQB__Batch_Items__r$ARCH_Account_ID__c</field>
+    </columns>
+    <columns>
+        <field>AQB__Batch__c.AQB__Batch_Items__r$AQB__Account__c.Name</field>
+    </columns>
+    <columns>
+        <field>AQB__Batch__c.AQB__Batch_Items__r$AQB__Signator__c.Account</field>
+    </columns>
+    <columns>
+        <field>AQB__Batch__c.AQB__Batch_Items__r$AQB__Account__c.AQB__AccountStatus__c</field>
+    </columns>
+    <columns>
+        <field>AQB__Batch__c.AQB__Batch_Items__r$AQB__Signator__c</field>
+    </columns>
+    <columns>
+        <field>AQB__Batch__c.AQB__Batch_Items__r$AQB__Signator__c.AQC_Contact_ARCH_ID__c</field>
+    </columns>
+    <columns>
+        <field>AQB__Batch__c.AQB__Batch_Items__r$AQB__Account__c.AQB__PrimaryContact__c.AQC_Contact_ARCH_ID__c</field>
+    </columns>
+    <columns>
+        <field>AQB__Batch__c.AQB__Batch_Items__r$AQB__Account__c.AQB__SecondaryContact__c.AQC_Contact_ARCH_ID__c</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>IF(AND(AQB__Batch_Item__c.AQB__Signator__c.Account.Name!=AQB__Batch_Item__c.AQB__Account__c.Name__lookup, AQB__Batch_Item__c.AQB__Account__c.AQB__RecordTypeDeveloperName__c = &apos;Household&apos;),
+    &quot;Signator Account does not match&quot;,
+    &quot;&quot;
+)</calculatedFormula>
+        <dataType>Text</dataType>
+        <developerName>CDF1</developerName>
+        <label>Signator Match?</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <description>Identifies Batch Items in open batches. The Signator Account does not match the Batch Item Account. This audit report should return zero records categorized as &quot;Signator Account does not match&quot; if there is no issue.</description>
+    <filter>
+        <criteriaItems>
+            <column>AQB__Batch__c$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>AQB__Batch__c.AQB__OpenBatch</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CDF1</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Signator Account does not match</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>AQB__Batch__c$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>2/29/2024 12:00 AM</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CDF1</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>AQB__Batch__c$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Batch Signator Account Audit</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Batch_Validation__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>AQB__Batch__c.AQB__Batch_Items__r$AQB__Account__c.Name</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>AQB__Batch__c$AQB__ExportDate__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

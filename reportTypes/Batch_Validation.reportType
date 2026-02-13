@@ -1,0 +1,1123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>AQB__Batch__c</baseObject>
+    <category>other</category>
+    <deployed>true</deployed>
+    <description>Used for Validation of Batch Data</description>
+    <join>
+        <join>
+            <outerJoin>false</outerJoin>
+            <relationship>AQB__Batch_Item_Transactions__r</relationship>
+        </join>
+        <outerJoin>false</outerJoin>
+        <relationship>AQB__Batch_Items__r</relationship>
+    </join>
+    <label>Batch Validation</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Accounting Export Date</displayNameOverride>
+            <field>AQB__ExportDate__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Acknowledgement Export Date</displayNameOverride>
+            <field>AQB__AcknowledgementExportDate__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ADIS Cutover Batch</displayNameOverride>
+            <field>ARCH_ADIS_Cutover_Batch__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Adjust Batch as Approver</displayNameOverride>
+            <field>ARCH_Adjust_Batch_as_Approver__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Approval Date</displayNameOverride>
+            <field>ARCH_Approval_Date__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>AQCV ConversionId</displayNameOverride>
+            <field>AQCV_ConversionId__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Bank Date</displayNameOverride>
+            <field>AQB__Bank_Date__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Bank Date Validation Check</displayNameOverride>
+            <field>ARCH_Bank_Date_Validation_Check__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Approval User</displayNameOverride>
+            <field>ARCH_Batch_Approval_User__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Date</displayNameOverride>
+            <field>AQB__BatchDate__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch ID</displayNameOverride>
+            <field>Id</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch is Closing</displayNameOverride>
+            <field>AQB__BatchIsClosing__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Item Date Validation</displayNameOverride>
+            <field>ARCH_Batch_Item_Date_Validation__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Item Opportunity Processing</displayNameOverride>
+            <field>AQB__Batch_Item_Opportunity_Processing__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Item Pledge Payment Processing</displayNameOverride>
+            <field>AQB__Batch_Item_Pledge_Payment_Processing__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Item Recurring Gift Processing</displayNameOverride>
+            <field>AQB__BatchItemRecurringGiftProcessing__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Batch Number</displayNameOverride>
+            <field>Name</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Review Note</displayNameOverride>
+            <field>ARCH_BatchReviewNote__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Review Note</displayNameOverride>
+            <field>Batch_Review_Note__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Status</displayNameOverride>
+            <field>ARCH_Batch_Status__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Type</displayNameOverride>
+            <field>AQB__BatchType__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Validation Status for Approval</displayNameOverride>
+            <field>ARCH_Batch_Validation_Status__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Check and Credit Card Validation</displayNameOverride>
+            <field>ARCH_Check_and_Credit_Card_Validation__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Check for Prior Adjusted Transaction</displayNameOverride>
+            <field>ARCH_Check_Prior_Adjusted_Transactio_del__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cloned Batch</displayNameOverride>
+            <field>ARCH_Cloned_Batch__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Close Date</displayNameOverride>
+            <field>AQB__CloseDate__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Closed Batch</displayNameOverride>
+            <field>ARCH_Closed_Batch__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Conditional Pledge Amount Check</displayNameOverride>
+            <field>ARCH_Conditional_Pledge_Amount_Check__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Conditional Pledge Validation Amount</displayNameOverride>
+            <field>ARCH_Conditional_Pledge_Validation_Amt__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Count of Batch Items</displayNameOverride>
+            <field>ARCH_Count_of_Batch_Items__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created By</displayNameOverride>
+            <field>CreatedBy</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created Date</displayNameOverride>
+            <field>CreatedDate</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date Processed</displayNameOverride>
+            <field>ARCH_Date_Processed__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Default Acknowledgement</displayNameOverride>
+            <field>AQB__DefaultAcknowledgement__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Default Amount</displayNameOverride>
+            <field>AQB__DefaultAmount__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Default Campaign Appeal</displayNameOverride>
+            <field>AQB__DefaultCampaignAppeal__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Default Campaign Fund</displayNameOverride>
+            <field>AQB__DefaultCampaignFund__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Default Contact to Honor</displayNameOverride>
+            <field>AQB__DefaultContactToHonor__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Default Contact to Notify</displayNameOverride>
+            <field>AQB__DefaultContactToNotify__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Default Credit Card Type</displayNameOverride>
+            <field>ARCH_Default_Credit_Card_Type__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Default Currency</displayNameOverride>
+            <field>AQB__DefaultCurrency__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Default Description</displayNameOverride>
+            <field>AQB__DefaultDescription__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Default Designation</displayNameOverride>
+            <field>AQB__DefaultChartofAccounts__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Default Entry Type</displayNameOverride>
+            <field>AQB__DefaultEntryType__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Default Gift Credit Date</displayNameOverride>
+            <field>ARCH_Default_Gift_Credit_Date__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Default Honoree Name</displayNameOverride>
+            <field>AQB__DefaultHonoreeName__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Default International Source of Charity</displayNameOverride>
+            <field>ARCH_Default_International_SourceCharity__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Default Method</displayNameOverride>
+            <field>AQB__DefaultMethod__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Default Notification Address Line 1</displayNameOverride>
+            <field>AQB__DefaultNotificationAddressLine1__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Default Notification Address Line 2</displayNameOverride>
+            <field>AQB__DefaultNotificationAddressLine2__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Default Notification Address Line 3</displayNameOverride>
+            <field>AQB__DefaultNotificationAddressLine3__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Default Notification City</displayNameOverride>
+            <field>AQB__DefaultNotificationCity__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Default Notification Country</displayNameOverride>
+            <field>AQB__DefaultNotificationCountry__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Default Notification Greeting</displayNameOverride>
+            <field>AQB__DefaultNotificationGreeting__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Default Notification State/Province</displayNameOverride>
+            <field>AQB__DefaultNotificationStateProvince__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Default Notification Zip/Postal Code</displayNameOverride>
+            <field>AQB__DefaultNotificationZipPostalCode__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Default Notifyee Name</displayNameOverride>
+            <field>AQB__DefaultNotifyeeName__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Default Postmark Date</displayNameOverride>
+            <field>ARCH_Default_Postmark_Date__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Default Tribute Description</displayNameOverride>
+            <field>AQB__DefaultTributeDescription__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Default Tribute Type</displayNameOverride>
+            <field>AQB__DefaultTributeType__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Deposit</displayNameOverride>
+            <field>AQB__Deposit__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Deprecated Status</displayNameOverride>
+            <field>AQB__Status__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Do Not Push to Accounting</displayNameOverride>
+            <field>ARCH_Do_Not_Push_to_Accounting__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Electronic Batch</displayNameOverride>
+            <field>AQB__ElectronicBatch__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>External ID</displayNameOverride>
+            <field>AQB__ExternalID__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Credit Date</displayNameOverride>
+            <field>AQB__GiftCreditYear__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Date</displayNameOverride>
+            <field>AQB__GiftDate__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Activity Date</displayNameOverride>
+            <field>LastActivityDate</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified By</displayNameOverride>
+            <field>LastModifiedBy</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified Date</displayNameOverride>
+            <field>LastModifiedDate</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>New Conditional Pledge Control Amount</displayNameOverride>
+            <field>AQB__ConditionalPledgeControlAmount__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>New Unconditional Pledge Control Amount</displayNameOverride>
+            <field>AQB__PledgeControlAmount__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>No Recall</displayNameOverride>
+            <field>ARCH_No_Recall__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Note</displayNameOverride>
+            <field>AQB__Note__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Open Opportunity Indicator</displayNameOverride>
+            <field>AQB__Open_Opportunity_Indicator__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Open Recurring Gift Indicator</displayNameOverride>
+            <field>AQB__OpenRecurringGiftIndicator__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Original Batch Owner</displayNameOverride>
+            <field>ARCH_OriginalBatchOwner__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Outstanding Pledge Indicator</displayNameOverride>
+            <field>AQB__Outstanding_Pledge_Indicator__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Owner</displayNameOverride>
+            <field>Owner</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Owner Unit</displayNameOverride>
+            <field>AQB__OwnerUnit__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment Amount Check</displayNameOverride>
+            <field>ARCH_Payment_Amount_Check__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment Control Amount</displayNameOverride>
+            <field>AQB__PaymentControlAmount__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment Validation Amount</displayNameOverride>
+            <field>ARCH_Payment_Validation_Amount__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Prior Adjusted Transaction Check</displayNameOverride>
+            <field>ARCH_Prior_Adjusted_Transaction_Check__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Prompt for link to Opportunity</displayNameOverride>
+            <field>AQB__PromptOpportunityLink__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Record Type</displayNameOverride>
+            <field>RecordType</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Record Type Developer Name</displayNameOverride>
+            <field>AQB__RecordTypeDeveloperName__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Securities Validation Check</displayNameOverride>
+            <field>ARCH_Securities_Validation_Check__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Set Batch Status Closed - Review Needed</displayNameOverride>
+            <field>ARCH_Batch_Status_Closed_Review_Needed__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Source of Data</displayNameOverride>
+            <field>AQB__SourceofData__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Unconditional Pledge Amount Check</displayNameOverride>
+            <field>ARCH_Unconditional_Pledge_Amount_Check__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Unconditional Pledge Validation Amount</displayNameOverride>
+            <field>ARCH_Unconditional_Pledge_Validation_Amt__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>User</displayNameOverride>
+            <field>AQB__User__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>User Control</displayNameOverride>
+            <field>AQB__UserControl__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>User Responsible for Acknowledgements</displayNameOverride>
+            <field>AQB__UserResponsibleForAcknowledgements__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Set Batch Status to Open - In Progress</displayNameOverride>
+            <field>ARCH_Set_Batch_Status_to_In_Progress__c</field>
+            <table>AQB__Batch__c</table>
+        </columns>
+        <masterLabel>Batches</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Transaction 1 Reference</displayNameOverride>
+            <field>AQB__Reference__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Signator</displayNameOverride>
+            <field>AQB__Signator__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Revised Pledge/Bequest Link</displayNameOverride>
+            <field>ARCH_RevisedPledgeBequestLink__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Pledge Type</displayNameOverride>
+            <field>AQB__PledgeType__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Pledge Link Indicator</displayNameOverride>
+            <field>AQB__PledgeLinkIndicator__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment Method</displayNameOverride>
+            <field>AQB__PaymentMethod__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Item Method</displayNameOverride>
+            <field>AQB__Method__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Matching Gift</displayNameOverride>
+            <field>AQB__MatchingGift__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Link to Recurring Gift</displayNameOverride>
+            <field>AQB__LinkToRecurringGift__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Item: Link To Pledge</displayNameOverride>
+            <field>AQB__LinkToPledge__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Link to Pledge</displayNameOverride>
+            <field>AQB__LinkToPledge__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Instrument Descriptor</displayNameOverride>
+            <field>AQB__InstrumentDescriptor__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Instrument</displayNameOverride>
+            <field>AQB__Instrument__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift/Pledge Number</displayNameOverride>
+            <field>AQB__Gift__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift/Pledge Date</displayNameOverride>
+            <field>AQB__DonorDate__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Description</displayNameOverride>
+            <field>AQB__GiftDescription__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date</displayNameOverride>
+            <field>AQB__Date__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Credit Card</displayNameOverride>
+            <field>AQB__CreditCard__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Item Name</displayNameOverride>
+            <field>Name</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Item ID</displayNameOverride>
+            <field>Id</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Automatic Payment</displayNameOverride>
+            <field>ARCH_Automatic_Payment__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ARCH Account ID</displayNameOverride>
+            <field>ARCH_Account_ID__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Name</displayNameOverride>
+            <field>AQB__AccountName__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AQB__CampaignAppeal__c.IsActive</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AQB__CampaignAppeal__c.Status</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <masterLabel>Batch Item</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Recurring Gift: Account</displayNameOverride>
+            <field>AQB__LinkToRecurringGift__c.AQB__AccountId__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Name</displayNameOverride>
+            <field>AQB__Account__c.Name</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Item : Signator : Account Name</displayNameOverride>
+            <field>AQB__Signator__c.Account</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Item : Account : Account Status</displayNameOverride>
+            <field>AQB__Account__c.AQB__AccountStatus__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Recurring Gift: Active</displayNameOverride>
+            <field>AQB__LinkToRecurringGift__c.ARCH_Active__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Primary: ARCH Contact ID</displayNameOverride>
+            <field>AQB__Account__c.AQB__PrimaryContact__c.AQC_Contact_ARCH_ID__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Secondary: ARCH Contact ID</displayNameOverride>
+            <field>AQB__Account__c.AQB__SecondaryContact__c.AQC_Contact_ARCH_ID__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Signator ARCH Contact ID</displayNameOverride>
+            <field>AQB__Signator__c.AQC_Contact_ARCH_ID__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AQB__CampaignAppeal__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AQB__Contact1__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AQB__Contact2__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Item : Account : Created By</displayNameOverride>
+            <field>AQB__Account__c.CreatedBy</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account: Created Date</displayNameOverride>
+            <field>AQB__Account__c.CreatedDate</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date Due</displayNameOverride>
+            <field>AQB__DateDue__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Recurring Gift: Date Ended</displayNameOverride>
+            <field>AQB__LinkToRecurringGift__c.AQB__DateEnded__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Primary Contact: First Name</displayNameOverride>
+            <field>AQB__Account__c.AQB__PrimaryContact__c.FirstName</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Secondary Contact: First Name</displayNameOverride>
+            <field>AQB__Account__c.AQB__SecondaryContact__c.FirstName</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Commitment Fiscal Year</displayNameOverride>
+            <field>AQB__LinkToPledge__c.AQC_Fiscal_Year__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account: Created By: Full Name</displayNameOverride>
+            <field>AQB__Account__c.CreatedBy.Name</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Recurring Gift: Pledge Link: Gift/Pledge Number</displayNameOverride>
+            <field>AQB__LinkToRecurringGift__c.AQB__PledgeLink__c.Name</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Primary Contact: Last Name</displayNameOverride>
+            <field>AQB__Account__c.AQB__PrimaryContact__c.LastName</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Secondary Contact: Last Name</displayNameOverride>
+            <field>AQB__Account__c.AQB__SecondaryContact__c.LastName</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Item : Account : Primary Contact</displayNameOverride>
+            <field>AQB__Account__c.AQB__PrimaryContact__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Commitment Gift/Pledge Record Type</displayNameOverride>
+            <field>AQB__LinkToPledge__c.RecordType</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Item : Account : Record Type Developer Name</displayNameOverride>
+            <field>AQB__Account__c.AQB__RecordTypeDeveloperName__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Item : Account : Secondary Contact</displayNameOverride>
+            <field>AQB__Account__c.AQB__SecondaryContact__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <masterLabel>Batch Items</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AQB__Account__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Amount</displayNameOverride>
+            <field>AQB__Amount__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Item Transactions: ARCH Account ID</displayNameOverride>
+            <field>AQB__Account__c.AQC_Account_ARCH_ID__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Item Transaction ID</displayNameOverride>
+            <field>Id</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Item Transaction ID</displayNameOverride>
+            <field>Name</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Correcting Transaction</displayNameOverride>
+            <field>AQB__CorrectingTransaction__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Credited Year Override Date</displayNameOverride>
+            <field>AQB__CreditedYearOverrideDate__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date</displayNameOverride>
+            <field>AQB__Date__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Deposited Outside ARCH</displayNameOverride>
+            <field>ARCH_Deposited_Outside_ARCH__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Description</displayNameOverride>
+            <field>AQB__Description__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Designation</displayNameOverride>
+            <field>AQB__Designation__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Primary Contact: Last Name</displayNameOverride>
+            <field>AQB__Account__c.AQB__PrimaryContact__c.LastName</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Link to Transaction</displayNameOverride>
+            <field>AQB__LinkToTransaction__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Matched Gift</displayNameOverride>
+            <field>AQB__MatchLink__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Item Transaction Method</displayNameOverride>
+            <field>AQB__Method__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Prior Adjusted Transaction</displayNameOverride>
+            <field>ARCH_Prior_Adjusted_Transaction__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Transaction Type</displayNameOverride>
+            <field>AQB__Transaction_Type__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Void Notation</displayNameOverride>
+            <field>AQB__VoidNotation__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Void?</displayNameOverride>
+            <field>AQB__Void__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <masterLabel>Batch Item Transaction</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Designation: Driver Worktag</displayNameOverride>
+            <field>AQB__Designation__c.ARCH_DriverWorktag__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Designation: Workday Gift ID</displayNameOverride>
+            <field>AQB__Designation__c.AQC_WorkdayGiftID__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Designation: Workday Grant ID</displayNameOverride>
+            <field>AQB__Designation__c.AQC_WorkdayGrantID__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Designation: Workday Project ID</displayNameOverride>
+            <field>AQB__Designation__c.AQC_WorkdayProjectID__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Designation: Workday Fund ID</displayNameOverride>
+            <field>AQB__Designation__c.AQC_WorkdayFundID__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Designation: Workday Cost Center ID</displayNameOverride>
+            <field>AQB__Designation__c.AQC_WorkdayCostCenterID__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Item Transaction : Designation : Active</displayNameOverride>
+            <field>AQB__Designation__c.AQB__Active__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Link to Transaction: Transaction Number</displayNameOverride>
+            <field>AQB__LinkToTransaction__c.Name</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Link to Transaction: Gift/Pledge Record Type</displayNameOverride>
+            <field>AQB__LinkToTransaction__c.ARCH_Gift_Pledge_Record_Type__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Item Transaction : Link To Pledge : Gift/Pledge Number</displayNameOverride>
+            <field>AQB__LinkToPledge__c.Name</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Item Transaction : Link to Transaction : Gift/Pledge Number</displayNameOverride>
+            <field>AQB__LinkToTransaction__c.AQB__Gift__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Item Transaction : Link to Transaction : Balance</displayNameOverride>
+            <field>AQB__LinkToTransaction__c.AQB__Balance__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Item Transaction : Link to Transaction : Prior Commitment Payment</displayNameOverride>
+            <field>AQB__LinkToTransaction__c.AQB__PledgePayment__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Link to Transaction: Transaction Type</displayNameOverride>
+            <field>AQB__LinkToTransaction__c.AQB__Type__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Item Transaction : Link to Transaction : Gift/Pledge Number : Record Type</displayNameOverride>
+            <field>AQB__LinkToTransaction__c.AQB__Gift__c.RecordType</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Batch Item Transaction : Link to Transaction : Gift/Pledge Number : Original Amount Pledged</displayNameOverride>
+            <field>AQB__LinkToTransaction__c.AQB__Gift__c.AQB__OriginalAmountPledged__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Link to Transaction: Designation</displayNameOverride>
+            <field>AQB__LinkToTransaction__c.AQB__ChartofAccounts__c</field>
+            <table>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r</table>
+        </columns>
+        <masterLabel>Batch Item Transactions</masterLabel>
+    </sections>
+</ReportType>

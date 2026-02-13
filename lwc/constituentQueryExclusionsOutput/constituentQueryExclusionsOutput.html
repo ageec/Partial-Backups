@@ -1,0 +1,397 @@
+<!-- sldsValidatorIgnore -->
+<template>
+  <template lwc:if={showExclusionsOutput}>
+  <lightning-card title="Exclusions &amp; Output Selections" style="background-color: #ffffff; border: none">
+    <div class="slds-p-left_medium">
+    <div class="slds-p-bottom_medium">
+    <div class="slds-p-around_medium lgc-bg">
+      <p><i>To produce the query, enter a query name, query description (optional), answer the following questions related to type of communication and if the query will be used for event invitations or solicitations, and then select your standard output files or specific output fields.</i></p>
+    </div>
+    <div class="slds-p-around_medium lgc-bg">
+      <lightning-input type="text" label="Query Name" name="queryName" id="textbox-unique-id-90" maxlength="255" onchange={handleQueryName} required></lightning-input>
+    </div>
+    <div class="slds-p-around_medium lgc-bg">
+      <lightning-input type="text" label="Query Description" name="queryDescription" id="textbox-unique-id-91" maxlength="255" onchange={handleQueryDescription}></lightning-input>
+    </div>
+    <div class="slds-p-top_medium slds-p-bottom_medium">
+      <lightning-radio-group name="households"
+                            label="Would you like to combine households?"
+                            options={householdOptions}
+                            value={value}
+                            onchange={handleHouseholds}
+                            type="radio"
+                            required></lightning-radio-group>
+    </div>
+    <div class="slds-p-bottom_medium">
+        <lightning-radio-group name="outputType"
+                              label="Choose an output type:"
+                              options={outputOptions}
+                              value={value}
+                              onchange={handleOutput}
+                              type="radio"
+                              required></lightning-radio-group>
+      </div>
+    <lightning-radio-group name="communicationType"
+                          label="What kind of communication will you be sending?"
+                          options={commTypeOptions}
+                          value={value}
+                          onchange={handleCommType}
+                          type="radio"
+                          required></lightning-radio-group>
+    </div>
+    <div class="slds-p-bottom_medium">
+    <lightning-radio-group name="solicitation"
+                          label="Is this a solicitation?"
+                          options={solicitationOptions}
+                          value={value}
+                          onchange={handleSolicitation}
+                          type="radio"
+                          required></lightning-radio-group>
+    </div>
+    <div class="slds-p-bottom_medium">
+    <lightning-radio-group name="eventinvitation"
+                          label="Will this list be used for an event invitation?"
+                          options={invitationOptions}
+                          value={value}
+                          onchange={handleInvitation}
+                          type="radio"
+                          required></lightning-radio-group>
+    </div>
+<!--<div class="slds-var-p-bottom_medium">
+      <div class="slds-checkbox">
+        <input type="checkbox" name="options" id="checkbox-unique-id-80" value="checkbox-unique-id-80" onchange={handleHouseholds}/>
+           <label class="slds-checkbox__label" for="checkbox-unique-id-80">
+             <span class="slds-checkbox_faux"></span>
+             <span class="slds-form-element__label">Combine Households</span>
+           </label>
+      </div>
+    </div>
+-->
+    <!--<fieldset class="slds-form-element">
+         <legend class="slds-form-element__legend slds-form-element__label">Exclusion Options</legend>-->
+    
+    <h3><b>Exclusion Options</b></h3>
+      <fieldset class="slds-form-element">
+         <table class="slds-table slds-table_cell-buffer slds-max-medium-table_stacked-horizontal">
+           <!-- Rest of your table code -->
+            <tr>
+              <td>
+                <template lwc:if={allExclusions}>
+                <div class="slds-form-element__control slds-var-p-left-small">
+                  <div class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-unique-id-82" value="checkbox-unique-id-82" checked disabled/>
+                       <label class="slds-checkbox__label" for="checkbox-unique-id-82">
+                         <span class="slds-checkbox_faux"></span>
+                         <span class="slds-form-element__label">Exclude Deceased</span>
+                       </label>
+                  </div>
+                </div>
+              </template>
+              <template lwc:else>
+                <div class="slds-form-element__control slds-var-p-left-small">
+                  <div class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-unique-id-82a" value="checkbox-unique-id-82a" onchange={handleDeceased}/>
+                       <label class="slds-checkbox__label" for="checkbox-unique-id-82a">
+                         <span class="slds-checkbox_faux"></span>
+                         <span class="slds-form-element__label">Exclude Deceased</span>
+                       </label>
+                  </div>
+                </div>
+              </template>
+              </td>
+              <td>
+                <template lwc:if={mailExclusions}>
+                <div class="slds-checkbox">
+                  <input type="checkbox" name="options" id="checkbox-unique-id-83" value="checkbox-unique-id-83" checked disabled/>
+                    <label class="slds-checkbox__label" for="checkbox-unique-id-83">
+                      <span class="slds-checkbox_faux"></span>
+                      <span class="slds-form-element__label">Exclude Lost</span>
+                    </label>
+                </div>
+              </template>
+              <template lwc:else>
+                <div class="slds-checkbox">
+                  <input type="checkbox" name="options" id="checkbox-unique-id-83a" value="checkbox-unique-id-83a" onchange={handleLost}/>
+                    <label class="slds-checkbox__label" for="checkbox-unique-id-83a">
+                      <span class="slds-checkbox_faux"></span>
+                      <span class="slds-form-element__label">Exclude Lost</span>
+                    </label>
+                </div>
+              </template>
+              </td>
+              <td>
+                <template lwc:if={mailExclusions}>
+                <div class="slds-checkbox">
+                  <input type="checkbox" name="options" id="checkbox-unique-id-87" value="checkbox-unique-id-87" checked disabled/>
+                    <label class="slds-checkbox__label" for="checkbox-unique-id-87">
+                      <span class="slds-checkbox_faux"></span>
+                      <span class="slds-form-element__label">Exclude Do Not Mail</span>
+                    </label>
+                </div>
+              </template>
+              <template lwc:else>
+                <div class="slds-checkbox">
+                  <input type="checkbox" name="options" id="checkbox-unique-id-87a" value="checkbox-unique-id-87a"  onchange={handleDoNotMail}/>
+                    <label class="slds-checkbox__label" for="checkbox-unique-id-87a">
+                      <span class="slds-checkbox_faux"></span>
+                      <span class="slds-form-element__label">Exclude Do Not Mail</span>
+                    </label>
+                </div>
+              </template>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <template lwc:if={allExclusions}>
+                <div class="slds-checkbox">
+                  <input type="checkbox" name="options" id="checkbox-unique-id-88" value="checkbox-unique-id-88" checked disabled/>
+                    <label class="slds-checkbox__label" for="checkbox-unique-id-88">
+                      <span class="slds-checkbox_faux"></span>
+                      <span class="slds-form-element__label">Exclude Do Not Contact</span>
+                    </label>
+                </div>
+              </template>
+              <template lwc:else>
+                <div class="slds-checkbox">
+                  <input type="checkbox" name="options" id="checkbox-unique-id-88a" value="checkbox-unique-id-88a" onchange={handleDoNotContact}/>
+                    <label class="slds-checkbox__label" for="checkbox-unique-id-88a">
+                      <span class="slds-checkbox_faux"></span>
+                      <span class="slds-form-element__label">Exclude Do Not Contact</span>
+                    </label>
+                </div>
+              </template>
+              </td>
+              <td>
+                <template lwc:if={solicitExclusions}>
+                <div class="slds-checkbox">
+                  <input type="checkbox" name="options" id="checkbox-unique-id-89" value="checkbox-unique-id-89" checked disabled/>
+                    <label class="slds-checkbox__label" for="checkbox-unique-id-89">
+                      <span class="slds-checkbox_faux"></span>
+                      <span class="slds-form-element__label">Exclude Do Not Solicit</span>
+                    </label>
+                </div>
+              </template>
+              <template lwc:else>
+                <div class="slds-checkbox">
+                  <input type="checkbox" name="options" id="checkbox-unique-id-89a" value="checkbox-unique-id-89a" onchange={handleDoNotSolicit}/>
+                    <label class="slds-checkbox__label" for="checkbox-unique-id-89a">
+                      <span class="slds-checkbox_faux"></span>
+                      <span class="slds-form-element__label">Exclude Do Not Solicit</span>
+                    </label>
+                </div>
+              </template>
+              </td>
+              <td>
+                <template lwc:if={mailSolicitExclusions}>
+                <div class="slds-checkbox">
+                  <input type="checkbox" name="options" id="checkbox-unique-id-90" value="checkbox-unique-id-90" checked disabled/>
+                    <label class="slds-checkbox__label" for="checkbox-unique-id-90">
+                      <span class="slds-checkbox_faux"></span>
+                      <span class="slds-form-element__label">Exclude Do Not Solicit by Mail</span>
+                    </label>
+                </div>
+              </template>
+              <template lwc:else>
+                <div class="slds-checkbox">
+                  <input type="checkbox" name="options" id="checkbox-unique-id-90a" value="checkbox-unique-id-90a" onchange={handleDoNotSolicitByMail}/>
+                    <label class="slds-checkbox__label" for="checkbox-unique-id-90a">
+                      <span class="slds-checkbox_faux"></span>
+                      <span class="slds-form-element__label">Exclude Do Not Solicit by Mail</span>
+                    </label>
+                </div>
+              </template>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <template lwc:if={emailSolicitExclusions}>
+                <div class="slds-checkbox">
+                  <input type="checkbox" name="options" id="checkbox-unique-id-91" value="checkbox-unique-id-91" checked disabled/>
+                    <label class="slds-checkbox__label" for="checkbox-unique-id-91">
+                      <span class="slds-checkbox_faux"></span>
+                      <span class="slds-form-element__label">Exclude Do Not Solicit by Email</span>
+                    </label>
+                </div>
+              </template>
+              <template lwc:else>
+                <div class="slds-checkbox">
+                  <input type="checkbox" name="options" id="checkbox-unique-id-91a" value="checkbox-unique-id-91a" onchange={handleDoNotSolicitByEmail}/>
+                    <label class="slds-checkbox__label" for="checkbox-unique-id-91a">
+                      <span class="slds-checkbox_faux"></span>
+                      <span class="slds-form-element__label">Exclude Do Not Solicit by Email</span>
+                    </label>
+                </div>
+              </template>
+              </td>
+              <td>
+                <template lwc:if={emailExclusions}>
+                <div class="slds-checkbox">
+                  <input type="checkbox" name="options" id="checkbox-unique-id-92" value="checkbox-unique-id-92" checked disabled/>
+                    <label class="slds-checkbox__label" for="checkbox-unique-id-92">
+                      <span class="slds-checkbox_faux"></span>
+                      <span class="slds-form-element__label">Exclude Email Opt-outs</span>
+                    </label>
+                </div>
+              </template>
+              <template lwc:else>
+                <div class="slds-checkbox">
+                  <input type="checkbox" name="options" id="checkbox-unique-id-92a" value="checkbox-unique-id-92a" onchange={handleEmailOptOuts}/>
+                    <label class="slds-checkbox__label" for="checkbox-unique-id-92a">
+                      <span class="slds-checkbox_faux"></span>
+                      <span class="slds-form-element__label">Exclude Email Opt-outs</span>
+                    </label>
+                </div>
+              </template>
+              </td>
+              <td>
+                <div class="slds-checkbox">
+                  <input type="checkbox" name="options" id="checkbox-unique-id-85" value="checkbox-unique-id-85" onchange={handleTrustee} checked/>
+                    <label class="slds-checkbox__label" for="checkbox-unique-id-85">
+                      <span class="slds-checkbox_faux"></span>
+                      <span class="slds-form-element__label">Exclude Trustees</span>
+                    </label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <template lwc:if={inviteExclusions}>
+                <div class="slds-checkbox">
+                  <input type="checkbox" name="options" id="checkbox-unique-id-110" value="checkbox-unique-id-110" checked disabled/>
+                    <label class="slds-checkbox__label" for="checkbox-unique-id-110">
+                      <span class="slds-checkbox_faux"></span>
+                      <span class="slds-form-element__label">Exclude Do Not Invite</span>
+                    </label>
+                </div>
+              </template>
+              <template lwc:else>
+                <div class="slds-checkbox">
+                  <input type="checkbox" name="options" id="checkbox-unique-id-110a" value="checkbox-unique-id-110a" onchange={handleDoNotInvite}/>
+                    <label class="slds-checkbox__label" for="checkbox-unique-id-110a">
+                      <span class="slds-checkbox_faux"></span>
+                      <span class="slds-form-element__label">Exclude Do Not Invite</span>
+                    </label>
+                </div>
+              </template>
+              </td>
+              <td>
+                <template lwc:if={mailExclusions}>
+                <div class="slds-checkbox">
+                  <input type="checkbox" name="options" id="checkbox-unique-id-93d" value="checkbox-unique-id-93d" onchange={handleCurrStudent} checked disabled/>
+                    <label class="slds-checkbox__label" for="checkbox-unique-id-93d">
+                      <span class="slds-checkbox_faux"></span>
+                      <span class="slds-form-element__label">Exclude Current Students</span>
+                    </label>
+                </div>
+                </template>
+                <template lwc:elseif={solicitExclusions}>
+                <div class="slds-checkbox">
+                  <input type="checkbox" name="options" id="checkbox-unique-id-93m" value="checkbox-unique-id-93m" onchange={handleCurrStudent} checked disabled/>
+                    <label class="slds-checkbox__label" for="checkbox-unique-id-93m">
+                      <span class="slds-checkbox_faux"></span>
+                      <span class="slds-form-element__label">Exclude Current Students</span>
+                    </label>
+                </div>
+                </template>
+                <template lwc:else>
+                <div class="slds-checkbox">
+                  <input type="checkbox" name="options" id="checkbox-unique-id-93" value="checkbox-unique-id-93" onchange={handleCurrStudent} checked/>
+                    <label class="slds-checkbox__label" for="checkbox-unique-id-93">
+                      <span class="slds-checkbox_faux"></span>
+                      <span class="slds-form-element__label">Exclude Current Students</span>
+                    </label>
+                </div>
+                </template>
+              </td>
+            </tr>
+         </table>
+    </fieldset>
+      <div class="slds-var-p-top_large slds-var-p-bottom-small"><hr /></div>
+      <div class="slds-text-heading_medium"><b>Standard Output</b></div>
+      <table>
+        <tr>
+          <td>
+            <div class="slds-var-p-top_large"><lightning-button label="Mail Merge (Account)" title="Generate the standard mail merge file format" onclick={handleMailMerge}></lightning-button></div>
+          </td>
+          <td>
+            <div class="slds-var-p-top_large"><lightning-button label="Email Merge (Contact)" title="Generate the standard email merge file format" onclick={handleEmailMerge}></lightning-button></div>
+          </td>
+          <td>
+            <div class="slds-var-p-top_large"><lightning-button label="Standard Account" title="Generate the standard account file format" onclick={handleStandardAccount}></lightning-button></div>
+          </td>
+          <td>
+            <div class="slds-var-p-top_large"><lightning-button label="Standard Contact" title="Generate the standard contact file format" onclick={handleStandardContact}></lightning-button></div>
+          </td>
+        </tr>
+      </table>
+      <div class="slds-var-p-top_large slds-var-p-bottom-small"><hr /></div>
+      <div class="slds-text-heading_medium"><b>Custom Output</b></div>
+      <div class="slds-var-p-left-small slds-var-p-top-medium slds-var-p-bottom-medium slds-var-p-right-medium">
+        <template lwc:if={mailMergeSelected}>
+        <div class="slds-form-element">
+          <lightning-dual-listbox name="outputFields"
+                                  label="Select Your Output Fields"
+                                  source-label="Available"
+                                  selected-label="Selected"
+                                  field-level-help="Choose the fields you would like included in your output. If you choose one of the standard outputs, any selections here will be ignored."
+                                  options={fieldOptions}
+                                  value={mailMergeFields}
+                                  onchange={handleSelectedFields}>
+          </lightning-dual-listbox>
+        </div>
+        </template>
+        <template lwc:elseif={emailMergeSelected}>
+          <div class="slds-form-element">
+            <lightning-dual-listbox name="outputFields"
+                                    label="Select Your Output Fields"
+                                    source-label="Available"
+                                    selected-label="Selected"
+                                    field-level-help="Choose the fields you would like included in your output. If you choose one of the standard outputs, any selections here will be ignored."
+                                    options={fieldOptions}
+                                    value={emailMergeFields}
+                                    onchange={handleSelectedFields}>
+            </lightning-dual-listbox>
+          </div>
+        </template>
+        <template lwc:elseif={standardAccountSelected}>
+          <div class="slds-form-element">
+            <lightning-dual-listbox name="outputFields"
+                                    label="Select Your Output Fields"
+                                    source-label="Available"
+                                    selected-label="Selected"
+                                    field-level-help="Choose the fields you would like included in your output. If you choose one of the standard outputs, any selections here will be ignored."
+                                    options={fieldOptions}
+                                    value={standardAccountFields}
+                                    onchange={handleSelectedFields}>
+            </lightning-dual-listbox>
+          </div>
+        </template>
+        <template lwc:elseif={standardContactSelected}>
+          <div class="slds-form-element">
+            <lightning-dual-listbox name="outputFields"
+                                    label="Select Your Output Fields"
+                                    source-label="Available"
+                                    selected-label="Selected"
+                                    field-level-help="Choose the fields you would like included in your output. If you choose one of the standard outputs, any selections here will be ignored."
+                                    options={fieldOptions}
+                                    value={standardContactFields}
+                                    onchange={handleSelectedFields}>
+            </lightning-dual-listbox>
+          </div>
+        </template>
+        <template lwc:else>
+          <lightning-dual-listbox name="outputFields"
+                                  label="Select Your Output Fields"
+                                  source-label="Available"
+                                  selected-label="Selected"
+                                  field-level-help="Choose the fields you would like included in your output. If you choose one of the standard outputs, any selections here will be ignored."
+                                  options={fieldOptions}
+                                  onchange={handleSelectedFields}>
+          </lightning-dual-listbox>
+        </template>
+      </div>
+      <div style="text-align: right"><lightning-button variant="brand" label="Submit" title="Clicking this button will start the process of generating your output" onclick={handleSubmit}></lightning-button></div>
+    </div>
+    </lightning-card>
+  </template>
+</template>
