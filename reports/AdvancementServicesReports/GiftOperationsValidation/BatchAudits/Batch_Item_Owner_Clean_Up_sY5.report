@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>AQB__Batch__c.AQB__Batch_Items__r$Id</field>
+    </columns>
+    <columns>
+        <field>AQB__Batch__c.AQB__Batch_Items__r$Name</field>
+    </columns>
+    <columns>
+        <field>AQB__Batch__c.AQB__Batch_Items__r$Owner</field>
+    </columns>
+    <description>Identifies any batch items that are owned by inactive users that are in open batches.</description>
+    <filter>
+        <criteriaItems>
+            <column>AQB__Batch__c.AQB__Batch_Items__r$Owner.IsActive</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>AQB__Batch__c$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>AQB__Batch__c.AQB__OpenBatch</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>AQB__Batch__c.AQB__Batch_Items__r$Owner.IsActive</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>AQB__Batch__c$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Batch Item Owner Clean Up</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ARCH_Batch_Batch_Items_Batch_Item_Transactions__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>AQB__Batch__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

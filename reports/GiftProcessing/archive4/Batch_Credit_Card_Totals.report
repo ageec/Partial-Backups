@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>AQB__Batch__c$Name</field>
+    </columns>
+    <columns>
+        <field>AQB__Batch__c.AQB__Batch_Items__r$Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r$AQB__Amount__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>AQB__Batch__c$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>2685</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r$AQB__Method__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Pledge,Pledge Soft Credit,Soft Credit - This Account</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>AQB__Batch__c.AQB__Batch_Items__r.AQB__Batch_Item_Transactions__r$AQB__Method__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>AQB__Batch__c.AQB__Batch_Items__r$AQB__CreditCard__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Batch Credit Card Totals</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Batch_Validation__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>AQB__Batch__c$AQB__ExportDate__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>
