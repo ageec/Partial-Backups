@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dataset xsi:nil="true"/>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>rgb(210, 138, 139)</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>A</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>Total___Closed_Won_G_6.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Total___Closed_Won_G_6.Opportunity.Component.SchoolUnitToggle</field>
+        <isDerived>false</isDerived>
+        <label>School/Unit</label>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>rgb(210, 138, 139)</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>A</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>Total___Solicited_Gi_6.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>2</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Total___Solicited_Gi_6.Opportunity.Component.SchoolUnitToggle</field>
+        <isDerived>false</isDerived>
+        <label>School/Unit</label>
+        <sortIndex>3</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>School_Unit_Toggle_1.D</field>
+        <isDerived>false</isDerived>
+        <label>Beige</label>
+        <sortIndex>4</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>School_Unit_Toggle_1.C</field>
+        <isDerived>false</isDerived>
+        <label>Black</label>
+        <sortIndex>5</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>School_Unit_Toggle_1.B</field>
+        <isDerived>false</isDerived>
+        <label>Red</label>
+        <sortIndex>6</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>rgb(210, 138, 139)</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>A</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>Total___Closed_Won_G_5.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>7</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>#e16032</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>SchoolUnitToggle</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>Total___Solicited_Gi_5.SchoolUnitToggle</field>
+        <isDerived>false</isDerived>
+        <sortIndex>8</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>rgb(210, 138, 139)</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>A</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>Total___Solicited_Gi_5.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>9</sortIndex>
+    </dimensions>
+    <measures>
+        <field>CFY_Total_Opportunit_8.A</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>$ Opportunities Closed/Won</label>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Total_Opportunit_8.B</field>
+        <isDerived>false</isDerived>
+        <label>Goal</label>
+        <sortIndex>1</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Total_Opportunit_8.C</field>
+        <isDerived>false</isDerived>
+        <label>% to Goal</label>
+        <sortIndex>2</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Total_Opportunit_9.C</field>
+        <isDerived>false</isDerived>
+        <label>% to Goal</label>
+        <sortIndex>3</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Total_Opportunit_9.B</field>
+        <isDerived>false</isDerived>
+        <label>Goal</label>
+        <sortIndex>4</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Total_Opportunit_9.A</field>
+        <isDerived>false</isDerived>
+        <label># Opportunities Closed/Won</label>
+        <sortIndex>5</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Total_Opportunit_10.A</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>$ Opportunities Solicited</label>
+        <sortIndex>6</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Total_Opportunit_10.B</field>
+        <isDerived>false</isDerived>
+        <label>Goal</label>
+        <sortIndex>7</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Total_Opportunit_10.C</field>
+        <isDerived>false</isDerived>
+        <label>% to Goal</label>
+        <sortIndex>8</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Total_Opportunit_11.C</field>
+        <isDerived>false</isDerived>
+        <label>% to Goal</label>
+        <sortIndex>9</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Total_Opportunit_11.B</field>
+        <isDerived>false</isDerived>
+        <label>Goal</label>
+        <sortIndex>10</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Total_Opportunit_11.A</field>
+        <isDerived>false</isDerived>
+        <label># Opportunities Solicited</label>
+        <sortIndex>11</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>rgb(210, 138, 139)</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>A</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>Total___Closed_Won_G_6.A</field>
+        <isDerived>false</isDerived>
+        <label>Closed/Won Count</label>
+        <sortIndex>12</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>rgb(210, 138, 139)</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>A</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>Total___Solicited_Gi_6.A</field>
+        <isDerived>false</isDerived>
+        <label>Solicited Count</label>
+        <sortIndex>13</sortIndex>
+    </measures>
+    <measures>
+        <field>New_Production_With__2.C</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>% to Goal</label>
+        <sortIndex>14</sortIndex>
+    </measures>
+    <measures>
+        <field>New_Production_With__2.B</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Goal</label>
+        <sortIndex>15</sortIndex>
+    </measures>
+    <measures>
+        <field>New_Production_With__2.A</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>New Production Amount with Bequests</label>
+        <sortIndex>16</sortIndex>
+    </measures>
+    <measures>
+        <field>New_Production_With__3.A</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>New Production Amount with Bequests</label>
+        <sortIndex>17</sortIndex>
+    </measures>
+    <measures>
+        <field>New_Production_With__3.B</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Goal</label>
+        <sortIndex>18</sortIndex>
+    </measures>
+    <measures>
+        <field>New_Production_With__3.C</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>% to Goal</label>
+        <sortIndex>19</sortIndex>
+    </measures>
+    <measures>
+        <field>Cash_Received_Medica_2.C</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>% to Goal</label>
+        <sortIndex>20</sortIndex>
+    </measures>
+    <measures>
+        <field>Cash_Received_Medica_2.B</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Goal</label>
+        <sortIndex>21</sortIndex>
+    </measures>
+    <measures>
+        <field>Cash_Received_Medica_2.A</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Cash Received</label>
+        <sortIndex>22</sortIndex>
+    </measures>
+    <measures>
+        <field>Cash_Received_Medica_3.A</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Cash Received</label>
+        <sortIndex>23</sortIndex>
+    </measures>
+    <measures>
+        <field>Cash_Received_Medica_3.B</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Goal</label>
+        <sortIndex>24</sortIndex>
+    </measures>
+    <measures>
+        <field>Cash_Received_Medica_3.C</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>% to Goal</label>
+        <sortIndex>25</sortIndex>
+    </measures>
+    <measures>
+        <field>Annual_Fund_Cash_Rec_2.C</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>% to Goal</label>
+        <sortIndex>26</sortIndex>
+    </measures>
+    <measures>
+        <field>Annual_Fund_Cash_Rec_2.B</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Goal</label>
+        <sortIndex>27</sortIndex>
+    </measures>
+    <measures>
+        <field>Annual_Fund_Cash_Rec_2.A</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Annual Fund Cash Received</label>
+        <sortIndex>28</sortIndex>
+    </measures>
+    <measures>
+        <field>Annual_Fund_Cash_Rec_3.A</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Annual Fund Cash Received</label>
+        <sortIndex>29</sortIndex>
+    </measures>
+    <measures>
+        <field>Annual_Fund_Cash_Rec_3.B</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Goal</label>
+        <sortIndex>30</sortIndex>
+    </measures>
+    <measures>
+        <field>Annual_Fund_Cash_Rec_3.C</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>% to Goal</label>
+        <sortIndex>31</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Donor_Count_Medi_2.A</field>
+        <formatCustomFormat>[&quot;#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Donor Count</label>
+        <sortIndex>32</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Donor_Count_Medi_2.B</field>
+        <formatCustomFormat>[&quot;#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Goal</label>
+        <sortIndex>33</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Donor_Count_Medi_2.C</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>% to Goal</label>
+        <sortIndex>34</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Donor_Count_Medi_3.C</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>% to Goal</label>
+        <sortIndex>35</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Donor_Count_Medi_3.B</field>
+        <formatCustomFormat>[&quot;#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Goal</label>
+        <sortIndex>36</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Donor_Count_Medi_3.A</field>
+        <formatCustomFormat>[&quot;#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Donor Count</label>
+        <sortIndex>37</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>rgb(210, 138, 139)</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>A</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>Total___Closed_Won_G_5.A</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Closed/Won Amount</label>
+        <sortIndex>38</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>rgb(210, 138, 139)</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>A</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>Total___Solicited_Gi_5.A</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Component Amount</label>
+        <sortIndex>39</sortIndex>
+    </measures>
+    <measures>
+        <field>New_Production_With__1.% to Goal</field>
+        <formatCustomFormat>[&quot;#,###.#%&quot;,100]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>40</sortIndex>
+    </measures>
+    <measures>
+        <field>New_Production_With__1.Goal</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>41</sortIndex>
+    </measures>
+    <measures>
+        <field>New_Production_With__1.$ - NewProductionAmountWithBequests</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>42</sortIndex>
+    </measures>
+    <measures>
+        <field>Cash_Received_Medica_1.% to Goal</field>
+        <formatCustomFormat>[&quot;#,###.#%&quot;,100]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>43</sortIndex>
+    </measures>
+    <measures>
+        <field>Cash_Received_Medica_1.Goal</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>44</sortIndex>
+    </measures>
+    <measures>
+        <field>Cash_Received_Medica_1.$ - Cash Received</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>45</sortIndex>
+    </measures>
+    <measures>
+        <field>Annual_Fund_Cash_Rec_1.$ - Annual Fund Cash Received</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>46</sortIndex>
+    </measures>
+    <measures>
+        <field>Annual_Fund_Cash_Rec_1.Goal</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>47</sortIndex>
+    </measures>
+    <measures>
+        <field>Annual_Fund_Cash_Rec_1.% to Goal</field>
+        <formatCustomFormat>[&quot;#,###.#%&quot;,100]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>48</sortIndex>
+    </measures>
+    <measures>
+        <field>New_Production_With__4.$ - Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>49</sortIndex>
+    </measures>
+    <measures>
+        <field>New_Production_With__4.Goal</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>50</sortIndex>
+    </measures>
+    <measures>
+        <field>New_Production_With__4.% to Goal</field>
+        <formatCustomFormat>[&quot;#,###.#%&quot;,100]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>51</sortIndex>
+    </measures>
+    <measures>
+        <field>New_Production_With__6.$ - Cash Received</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>52</sortIndex>
+    </measures>
+    <measures>
+        <field>New_Production_With__6.Goal</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>53</sortIndex>
+    </measures>
+    <measures>
+        <field>New_Production_With__6.% to Goal</field>
+        <formatCustomFormat>[&quot;#,###.#%&quot;,100]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>54</sortIndex>
+    </measures>
+    <measures>
+        <field>Cash_Received_Table_1.$ - Cash Received</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>55</sortIndex>
+    </measures>
+    <measures>
+        <field>Cash_Received_Table_1.Goal</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>56</sortIndex>
+    </measures>
+    <measures>
+        <field>Cash_Received_Table_1.% to Goal</field>
+        <formatCustomFormat>[&quot;#,###.#%&quot;,100]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>57</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Donor_Count_Medi_1.% to Goal</field>
+        <formatCustomFormat>[&quot;#,###.#%&quot;,100]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>58</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Donor_Count_Medi_4.% to Goal</field>
+        <formatCustomFormat>[&quot;#,###.#%&quot;,100]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>59</sortIndex>
+    </measures>
+    <type>Asset</type>
+    <waveVisualization>Performance_and_Metrics_Philanthropic_Strategy</waveVisualization>
+</WaveXmd>

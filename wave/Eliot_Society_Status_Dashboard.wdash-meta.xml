@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDashboard xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <content xsi:nil="true"/>
+    <application>SharedApp</application>
+    <dateVersion>1</dateVersion>
+    <description>The Eliot Society Status Dashboard is designed to make monitoring and renewing Eliot Society Memberships easier. The entire dashboard holds Eliot Society member data over multiple years, including the current fiscal year. There are three tabs of information: Summary, Details, and Acknowledgement. 
+Primary use cases for this dashboard include:
+• To provide insights into Eliot Society progress against set goals.
+• To offer summary data on Eliot Society Members.
+• To enable data-driven decision-making for targeting constituents for new Eliot Memberships.
+• To easily compare Eliot Society Membership within a date range. 
+• To show all Eliot Society Members who need to renew in the upcoming months</description>
+    <masterLabel>Eliot Society Status</masterLabel>
+</WaveDashboard>
