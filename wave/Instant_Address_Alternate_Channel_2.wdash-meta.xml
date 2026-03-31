@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDashboard xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <content xsi:nil="true"/>
+    <application>SharedApp</application>
+    <dateVersion>1</dateVersion>
+    <description>The NCOA Dashboard (National Change of Address) is designed to provide an in-depth view of address validation transactions provided by 3rd party application Initium Instant Address The dashboard pulls data from multiple sources such as Account, Contact, Alternate Channel, and Instant Address objects, which are updated regularly to ensure the most accurate and timely insights are available.
+The dashboard is intended for use by Advancement Services-Record Management to validate and format address fields in order to increase delivery rates and reduce data entry time.</description>
+    <masterLabel>NCOA</masterLabel>
+</WaveDashboard>

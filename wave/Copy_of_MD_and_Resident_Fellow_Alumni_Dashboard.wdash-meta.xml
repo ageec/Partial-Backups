@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDashboard xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <content xsi:nil="true"/>
+    <application>SharedApp</application>
+    <dateVersion>1</dateVersion>
+    <description>Dashboard provides a visual count showing how many MD and Resident/Fellows have remained in the area, what kind of alum they are and what part of the region they are serving?  Can also provide documented numbers for the School of Medicine, [ARCHRPT-20]</description>
+    <masterLabel>MD and Resident/Fellow Alumni Dashboard</masterLabel>
+</WaveDashboard>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dataset xsi:nil="true"/>
+    <measures>
+        <field>Clone_of_Doctor_Resi_1.C</field>
+        <isDerived>false</isDerived>
+        <label>ST. L</label>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <field>Clone_of_Doctor_Resi_1.B</field>
+        <isDerived>false</isDerived>
+        <label>MO</label>
+        <sortIndex>1</sortIndex>
+    </measures>
+    <measures>
+        <field>Clone_of_Doctor_Resi_1.A</field>
+        <isDerived>false</isDerived>
+        <label>IL</label>
+        <sortIndex>2</sortIndex>
+    </measures>
+    <measures>
+        <field>STL_Region_Count_1.C</field>
+        <isDerived>false</isDerived>
+        <label>MD &amp; Resident/Fellow</label>
+        <sortIndex>3</sortIndex>
+    </measures>
+    <measures>
+        <field>STL_Region_Count_1.A</field>
+        <isDerived>false</isDerived>
+        <label>Resident/Fellow</label>
+        <sortIndex>4</sortIndex>
+    </measures>
+    <measures>
+        <field>STL_Region_Count_1.B</field>
+        <isDerived>false</isDerived>
+        <label>MD</label>
+        <sortIndex>5</sortIndex>
+    </measures>
+    <measures>
+        <field>MO_Count_1.B</field>
+        <isDerived>false</isDerived>
+        <label>MD</label>
+        <sortIndex>6</sortIndex>
+    </measures>
+    <measures>
+        <field>MO_Count_1.A</field>
+        <isDerived>false</isDerived>
+        <label>Resident/Fellow</label>
+        <sortIndex>7</sortIndex>
+    </measures>
+    <measures>
+        <field>MO_Count_1.C</field>
+        <isDerived>false</isDerived>
+        <label>MD &amp; Resident/Fellow</label>
+        <sortIndex>8</sortIndex>
+    </measures>
+    <measures>
+        <field>Il_Count_1.B</field>
+        <isDerived>false</isDerived>
+        <label>MD</label>
+        <sortIndex>9</sortIndex>
+    </measures>
+    <measures>
+        <field>Il_Count_1.A</field>
+        <isDerived>false</isDerived>
+        <label>Resident/Fellow</label>
+        <sortIndex>10</sortIndex>
+    </measures>
+    <measures>
+        <field>Il_Count_1.C</field>
+        <isDerived>false</isDerived>
+        <label>MD &amp; Resident/Fellow</label>
+        <sortIndex>11</sortIndex>
+    </measures>
+    <measures>
+        <field>Doctor_Resident_Regi_1.A</field>
+        <isDerived>false</isDerived>
+        <label>IL</label>
+        <sortIndex>12</sortIndex>
+    </measures>
+    <measures>
+        <field>Doctor_Resident_Regi_1.B</field>
+        <isDerived>false</isDerived>
+        <label>MO</label>
+        <sortIndex>13</sortIndex>
+    </measures>
+    <measures>
+        <field>Doctor_Resident_Regi_1.C</field>
+        <isDerived>false</isDerived>
+        <label>ST. L</label>
+        <sortIndex>14</sortIndex>
+    </measures>
+    <type>Asset</type>
+    <waveVisualization>Copy_of_MD_and_Resident_Fellow_Alumni_Dashboard</waveVisualization>
+</WaveXmd>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDashboard xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <content xsi:nil="true"/>
+    <application>Public_App</application>
+    <dateVersion>1</dateVersion>
+    <description>The 5 Year Performance Dashboard provides key summary gift and donor totals and counts. Similar to several other ARCH dashboards, there are robust filter options that allow users to pull data pertinent to their work. The 5 Year Performance Dashboard will provide information that was previously found in several ADIS reports, including the 300, 883, and 1100 reports.
+Primary use cases for this dashboard include:
+• Tracking total giving and donor counts by school/unit, department, donor type, gift purpose, spendable/pooled and more.
+• Understanding trends in giving month-to-date, fiscal year-to-date, and year-over-year for the last five fiscal years, in total or by school/unit, department, donor type, gift purpose, spendable/pooled and more.
+• Reviewing new production month-to-date, fiscal year-to-date, and year-over-year for the last five fiscal years, filtered to a specific school/unit, department, donor type, and more.</description>
+    <masterLabel>5 Year Performance Dashboard</masterLabel>
+</WaveDashboard>

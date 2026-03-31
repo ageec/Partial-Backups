@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDashboard xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <content xsi:nil="true"/>
+    <application>Public_App</application>
+    <dateVersion>1</dateVersion>
+    <description>The Annual Fund Performance Dashboard provides key summary gift and donor totals and counts for Annual Giving. Similar to several other ARCH dashboards, there are robust filter options that allow users to pull data pertinent to their work. 
+Primary use cases for this dashboard include:
+• Tracking total giving and donor counts by school/unit, department, donor type, gift purpose, spendable/pooled and more.
+• Understanding trends in giving month-to-date, fiscal year-to-date, and year-over-year for the last five fiscal years, in total 
+or by school/unit, department, donor type, gift purpose, spendable/pooled and more.
+• Compare changes in donor gift bands over the last five fiscal years.</description>
+    <masterLabel>Annual Fund Performance</masterLabel>
+</WaveDashboard>

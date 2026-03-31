@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dataset xsi:nil="true"/>
+    <dimensions>
+        <field>lens_1.CreatedDate_Year~~~CreatedDate_Month~~~CreatedDate_Day</field>
+        <isDerived>false</isDerived>
+        <label>Contact Created Date (Year-Month-Day)</label>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_1.Account.Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Account.Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>AccountId</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_1.AQB__Full_Name__c</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>AQB__Full_Name__c</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>2</sortIndex>
+    </dimensions>
+    <measures>
+        <field>lens_1.B</field>
+        <isDerived>false</isDerived>
+        <label>Legal Credit %</label>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_1.C</field>
+        <isDerived>false</isDerived>
+        <label>Gift Recognition Credit %</label>
+        <sortIndex>1</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_1.A</field>
+        <isDerived>false</isDerived>
+        <label>Contacts per Account</label>
+        <sortIndex>2</sortIndex>
+    </measures>
+    <type>Asset</type>
+    <waveVisualization>Accounts_with_More_than_2_Contacts</waveVisualization>
+</WaveXmd>

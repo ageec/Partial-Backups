@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dataset xsi:nil="true"/>
+    <dimensions>
+        <field>Event_Guest_List_1.Chancellor_Martin_Checkbox</field>
+        <isDerived>false</isDerived>
+        <label>ADM Former Student</label>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Event_Guest_List_1.Guest.AQB__ContactExternalID__c</field>
+        <isDerived>false</isDerived>
+        <label>ARCH Contact Id</label>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Senior_Staff_Report_1.Guest.AQB__ContactExternalID__c</field>
+        <isDerived>false</isDerived>
+        <label>ARCH Contact ID</label>
+        <sortIndex>2</sortIndex>
+    </dimensions>
+    <type>Asset</type>
+    <waveVisualization>Senior_Staff_Event_Briefing</waveVisualization>
+</WaveXmd>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDashboard xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <content xsi:nil="true"/>
+    <application>Non_UA_Finance</application>
+    <dateVersion>1</dateVersion>
+    <description>Dashboard that is useful when performing bank reconciliation, it will aid in summarizing bank and business activities like daily cash deposits, bank deposits and credit card transaction information</description>
+    <masterLabel>Non-Cash Contributions</masterLabel>
+</WaveDashboard>

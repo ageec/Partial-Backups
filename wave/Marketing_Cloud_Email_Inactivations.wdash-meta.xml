@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDashboard xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <content xsi:nil="true"/>
+    <application>Marketing_Cloud_App</application>
+    <dateVersion>1</dateVersion>
+    <description>The Marketing Cloud Email Inactivations feature allows users to manage and streamline their email marketing efforts by identifying and handling inactive email subscribers. This functionality is essential for maintaining a healthy email list, improving engagement rates, and ensuring compliance with best email marketing practices.</description>
+    <masterLabel>Marketing Cloud Email Inactivations</masterLabel>
+</WaveDashboard>

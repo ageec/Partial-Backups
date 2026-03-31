@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDashboard xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <content xsi:nil="true"/>
+    <application>SharedApp</application>
+    <dateVersion>1</dateVersion>
+    <description>Dashboard specific to Life Income Liability, since we will now have ARCH integration records, the initial liability on life income gifts. This is a way for us to manage long-term obligations associated with charitable gift annuities or other life income gifts.</description>
+    <masterLabel>Life Income Liability Dashboard</masterLabel>
+</WaveDashboard>

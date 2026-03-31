@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dataset xsi:nil="true"/>
+    <dimensions>
+        <field>Parents_Council_Terr_1.StudentLevel</field>
+        <isDerived>false</isDerived>
+        <label>Class Year</label>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Parents_Council_Scho_1.StudentLevel</field>
+        <isDerived>false</isDerived>
+        <label>Class Year</label>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Parents_Council_Ethn_1.StudentLevel</field>
+        <isDerived>false</isDerived>
+        <label>Class Year</label>
+        <sortIndex>2</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Parents_Council_Scho_2.StudentLevel</field>
+        <isDerived>false</isDerived>
+        <label>Class Year</label>
+        <sortIndex>3</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Parents_Council_Targ_1.StudentLevel</field>
+        <isDerived>false</isDerived>
+        <label>Class Year</label>
+        <sortIndex>4</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Parents_Council_Deta_1.ChildContact.Name</field>
+        <isDerived>false</isDerived>
+        <label>Child Name</label>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>ChildContact.Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>ChildContact.Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>5</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Parents_Council_Deta_1.StudentLevel</field>
+        <isDerived>false</isDerived>
+        <label>Class Year</label>
+        <sortIndex>6</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Parents_Council_Deta_1.Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>7</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>AccountFilter_1.AccountName</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Account.Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>Account.Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>8</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>NewProductionDetails_1.AccountName</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Account.Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordDisplayFields>
+            <recordDisplayField>AccountName</recordDisplayField>
+            <sortIndex>1</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>AccountID</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>9</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>NewProductionDetails_1.Parents.StudentLevel</field>
+        <isDerived>false</isDerived>
+        <label>Class Year</label>
+        <sortIndex>10</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>NewProductionDetails_1.ARCHCreditedFiscalYearDate_Year_Fiscal</field>
+        <isDerived>false</isDerived>
+        <label>Fiscal Year</label>
+        <sortIndex>11</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>ParentsDirectory_1.Child1.Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Child1.Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>ChildContactId1</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>12</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>ParentsDirectory_1.Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>13</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>ParentsDirectory_1.Child2.Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Child2.Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>ChildContactId2</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>14</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>ParentsDirectory_1.Child3.Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Child3.Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>ChildContactId3</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>15</sortIndex>
+    </dimensions>
+    <measures>
+        <field>Parents_Council_Terr_1.A</field>
+        <isDerived>false</isDerived>
+        <label># of Families</label>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <field>Parents_Council_Scho_1.A</field>
+        <isDerived>false</isDerived>
+        <label># of Children</label>
+        <sortIndex>1</sortIndex>
+    </measures>
+    <measures>
+        <field>Parents_Council_Ethn_1.A</field>
+        <isDerived>false</isDerived>
+        <label># of Families</label>
+        <sortIndex>2</sortIndex>
+    </measures>
+    <measures>
+        <field>Parents_Council_Scho_2.A</field>
+        <isDerived>false</isDerived>
+        <label># of Families</label>
+        <sortIndex>3</sortIndex>
+    </measures>
+    <measures>
+        <field>Parents_Council_Targ_1.A</field>
+        <isDerived>false</isDerived>
+        <label># of Families</label>
+        <sortIndex>4</sortIndex>
+    </measures>
+    <measures>
+        <field>DemogrpahicChildCoun_1.A</field>
+        <isDerived>false</isDerived>
+        <label># of Children</label>
+        <sortIndex>5</sortIndex>
+    </measures>
+    <measures>
+        <field>DemogrpahicFamilyCou_1.A</field>
+        <isDerived>false</isDerived>
+        <label># of Families</label>
+        <sortIndex>6</sortIndex>
+    </measures>
+    <measures>
+        <field>AccountFilter_1.B</field>
+        <formatCustomFormat>[&quot;#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>New Production</label>
+        <sortIndex>7</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_3.Cash Received</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>8</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_3.New Production w/ Bequests - Annual Fund</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>9</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_3.New Production w/ Bequests - Pooled Giving</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>10</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_3.New Production w/ Bequests</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>11</sortIndex>
+    </measures>
+    <measures>
+        <field>NewProductionDetails_1.D</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Cash Received</label>
+        <sortIndex>12</sortIndex>
+    </measures>
+    <measures>
+        <field>NewProductionDetails_1.C</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>New Production w/ Bequests - Annual Fund</label>
+        <sortIndex>13</sortIndex>
+    </measures>
+    <measures>
+        <field>NewProductionDetails_1.A</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>New Production w/ Bequests - Pooled Giving</label>
+        <sortIndex>14</sortIndex>
+    </measures>
+    <measures>
+        <field>NewProductionDetails_1.B</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>New Production w/ Bequests</label>
+        <sortIndex>15</sortIndex>
+    </measures>
+    <type>Asset</type>
+    <waveVisualization>Parents_Council_Monthly_Giving</waveVisualization>
+</WaveXmd>

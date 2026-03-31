@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDashboard xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <content xsi:nil="true"/>
+    <application>Public_App</application>
+    <dateVersion>1</dateVersion>
+    <description>Dashboard that shows new pledge commitments, Information can be used to follow pledge fulfillment for any specific time period and to view a list of payments due in upcoming months. Payment Activity-detail will be helpful so that I users can connect gifts to pledge commitments, make changes to payments and useful when following payments or viewing a list of upcoming pledge payments.</description>
+    <masterLabel>Pledge Receivable Rollforward</masterLabel>
+</WaveDashboard>

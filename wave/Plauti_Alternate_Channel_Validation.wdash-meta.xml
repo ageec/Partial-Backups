@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDashboard xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <content xsi:nil="true"/>
+    <application>SharedApp</application>
+    <dateVersion>1</dateVersion>
+    <description>The Alternate Channel Validation Dashboard is designed to provide an in-depth view of address validation transactions provided by 3rd party applications Initium Instant Address and Plauti Record Validation. The dashboard pulls data from multiple sources such as Account, Contact, Alternate Channel, Instant Address, and Record Validation objects, which are updated regularly to ensure the most accurate and timely insights are available.
+The dashboard is intended for use by Advancement Services-Record Management to validate and format email, phone number, and address fields in order to decrease bounce rates, increase delivery rates, introduce new segmentation options and reduce data entry time.</description>
+    <masterLabel>Alternate Channel Validation</masterLabel>
+</WaveDashboard>

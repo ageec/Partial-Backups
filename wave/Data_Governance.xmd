@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dataset xsi:nil="true"/>
+    <dimensions>
+        <field>lens_1.FirstName</field>
+        <isDerived>false</isDerived>
+        <label>Staff First Name</label>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>FirstName</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_1.LastName</field>
+        <isDerived>false</isDerived>
+        <label>Staff Last Name</label>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <measures>
+        <field>lens_1.DaysSinceLastLogin</field>
+        <isDerived>false</isDerived>
+        <label>Total Days Since Last Login</label>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <type>Asset</type>
+    <waveVisualization>Data_Governance</waveVisualization>
+</WaveXmd>

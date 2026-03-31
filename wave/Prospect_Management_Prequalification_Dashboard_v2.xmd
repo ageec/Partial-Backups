@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dataset xsi:nil="true"/>
+    <dimensions>
+        <field>lens_1.Last_Subst_AR.AQB__Date__c</field>
+        <isDerived>false</isDerived>
+        <label>Last Substantive Activity Report Date</label>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_1.Unit_Date.Most_Recent_Unit_Transaction_Date</field>
+        <isDerived>false</isDerived>
+        <label>Most Recent Unit Transaction Date</label>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_1.Account_Education.All_Degrees_and_Diplomas</field>
+        <isDerived>false</isDerived>
+        <label>All Account Degrees and Diplomas</label>
+        <sortIndex>2</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_1.BillingState</field>
+        <isDerived>false</isDerived>
+        <label>Account Mailing Address State</label>
+        <sortIndex>3</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_1.Largest_Gift.Largest_GiftPledge_Date</field>
+        <isDerived>false</isDerived>
+        <label>Largest Gift/Pledge Date (Account)</label>
+        <sortIndex>4</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_1.Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>5</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_1.Largest_Gift.Largest_GiftPledge_Number</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Largest_Gift.Largest_GiftPledge_Number</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>Largest_Gift.Largest_GiftPledge_ID</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>6</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_1.Primary_Contact.Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Primary_Contact.Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>Primary_Contact.Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>7</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_1.Secondary_Contact.Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Secondary_Contact.Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>Secondary_Contact.Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>8</sortIndex>
+    </dimensions>
+    <measures>
+        <field>lens_1.Unit_Date.Most_Recent_Unit_transaction_Amount</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_1.Aggregate_University.Sum.University_Lifetime_Transaction_Amount</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>1</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_1.Aggregate_Unit.Sum.Unit_Lifetime_Transaction_Amount</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>2</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_1.Unit_Contribution_Percent</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>3</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_1.Largest_Gift.Largest_GiftPledge_Amount</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Largest Gift/Pledge Amount (Account)</label>
+        <sortIndex>4</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_1.BalanceDue.SUM_AQB__RollUpPledgeBalanceTotal__c</field>
+        <isDerived>false</isDerived>
+        <label>Total Account Balance Due</label>
+        <sortIndex>5</sortIndex>
+    </measures>
+    <type>Asset</type>
+    <waveVisualization>Prospect_Management_Prequalification_Dashboard_v2</waveVisualization>
+</WaveXmd>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dataset xsi:nil="true"/>
+    <dimensions>
+        <field>Guest_List_By_Event_1.Event.Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Event.Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>AQB__Event__c</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Guest_List_By_Event_1.Account.Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Account.Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>Guest.AccountId</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <measures>
+        <field>Guest_Count_By_Atten_2.B</field>
+        <isDerived>false</isDerived>
+        <label>Guest Count</label>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <field>Guest_Count_By_Atten_1.B</field>
+        <isDerived>false</isDerived>
+        <label>Guest Count</label>
+        <sortIndex>1</sortIndex>
+    </measures>
+    <measures>
+        <field>Response_Percentage__1.H</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Attended</label>
+        <sortIndex>2</sortIndex>
+    </measures>
+    <measures>
+        <field>Response_Percentage__1.I</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Cancelled</label>
+        <sortIndex>3</sortIndex>
+    </measures>
+    <measures>
+        <field>Response_Percentage__1.J</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>No Show</label>
+        <sortIndex>4</sortIndex>
+    </measures>
+    <measures>
+        <field>Response_Percentage__1.K</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>RSVP - No</label>
+        <sortIndex>5</sortIndex>
+    </measures>
+    <measures>
+        <field>Response_Percentage__1.L</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>RSVP - Yes</label>
+        <sortIndex>6</sortIndex>
+    </measures>
+    <measures>
+        <field>Response_Percentage__1.M</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Waitlist</label>
+        <sortIndex>7</sortIndex>
+    </measures>
+    <measures>
+        <field>Event_Count_By_Guest_1.A</field>
+        <isDerived>false</isDerived>
+        <label>No. of Events</label>
+        <sortIndex>8</sortIndex>
+    </measures>
+    <measures>
+        <field>Guest_Count_By_Atten_3.B</field>
+        <isDerived>false</isDerived>
+        <label>Guest Count</label>
+        <sortIndex>9</sortIndex>
+    </measures>
+    <measures>
+        <field>Event_Attendance_and_1.Percent of Capacity</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>10</sortIndex>
+    </measures>
+    <type>Asset</type>
+    <waveVisualization>Event_Management</waveVisualization>
+</WaveXmd>
