@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dataset xsi:nil="true"/>
+    <dimensions>
+        <field>lens_2_1.IERCampMemContactJoin.Account.AQB__AccountStatus__c</field>
+        <isDerived>false</isDerived>
+        <label>Donor Status</label>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_2_1.DateSent_YYYYMMDD</field>
+        <isDerived>false</isDerived>
+        <label>Date Sent</label>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_2_1.BirthdateYYYYMMDD</field>
+        <isDerived>false</isDerived>
+        <label>Birthdate</label>
+        <sortIndex>2</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_1.Email Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordIdField>Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>3</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_2.ARCH Account ID</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordIdField>AccountID</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>4</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_2.ARCH Contact ID</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordIdField>ContactID</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>5</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_2.Subscriber Key</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordIdField>ContactID</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>6</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_30.IERCampMemContactJoin.ARCH_Contact_ID__c</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordIdField>IERCampMemJoin.Contact.Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>7</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_30.et4ae5__Contact_ID__c</field>
+        <isDerived>false</isDerived>
+        <label>Subscriber Key</label>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordIdField>et4ae5__Contact_ID__c</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>8</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_30.IERCampMemContactJoin.ARCH_Sort_Name__c</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordIdField>IERCampMemJoin.Contact.Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>9</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_18.Sort Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordIdField>ContactID</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>10</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_18.ARCH Account ID</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordIdField>AccountID</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>11</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_18.ARCH Contact ID</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordIdField>ContactID</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>12</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_18.Subscriber Key</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordIdField>ContactID</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>13</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_2_2.Email Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordIdField>Subscriber Key</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>14</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_2_2.ARCH Account ID</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordIdField>AccountID</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>15</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_2_2.ARCH Contact ID</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordIdField>ContactID</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>16</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_2_2.Subscriber Key</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordIdField>ContactID</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>17</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_27.Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordIdField>et4ae5__SendDefinition__c</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>18</sortIndex>
+    </dimensions>
+    <measures>
+        <field>lens_20_4.A</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_5.D</field>
+        <formatCustomFormat>[&quot;#,###.#%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>1</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_5.F</field>
+        <formatCustomFormat>[&quot;#,###.#%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>2</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_5.E</field>
+        <formatCustomFormat>[&quot;#,###.#%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>3</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_5.C</field>
+        <formatCustomFormat>[&quot;#,###.#%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>4</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_5.B</field>
+        <formatCustomFormat>[&quot;#,###.#%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>5</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_5.A</field>
+        <formatCustomFormat>[&quot;#,###.#%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>6</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_13.A</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>7</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_14.A</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>8</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_12.A</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>9</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_20_3.A</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>10</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_24.E</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Click Thru Rate</label>
+        <sortIndex>11</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_24.B</field>
+        <isDerived>false</isDerived>
+        <label>Total Sends</label>
+        <sortIndex>12</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_24.D</field>
+        <isDerived>false</isDerived>
+        <label>Total Opened</label>
+        <sortIndex>13</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_24.A</field>
+        <isDerived>false</isDerived>
+        <label>Total Links Clicked</label>
+        <sortIndex>14</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_24.C</field>
+        <isDerived>false</isDerived>
+        <label>Unsubscribed</label>
+        <sortIndex>15</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_21.Click Thru Rate</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>16</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_28.B</field>
+        <isDerived>false</isDerived>
+        <label>Count</label>
+        <sortIndex>17</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_25.Click to Open Rate</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>18</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_26.Most Recent Gift Amount</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>19</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_26.Total Years Given</field>
+        <formatCustomFormat>[&quot;#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>20</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_26.Lifetime Giving Amount</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>21</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_26.Total Pledge Balance</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>22</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_26.Total Bequest Balance</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>23</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_26.Total Fiscal Year Cumulative Giving</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>24</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_26.Total Gifts and Pledges all types</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>25</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_26.CFY Payments on Previous Commitments</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>26</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_26.CFY Payments on CFY Commitments</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>27</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_26.CFY Bequest Commitment</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>28</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_26.CFY Pledge and Grant Commitments</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>29</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_26. CFY Outright Gifts and Soft Credits</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>30</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_2.Most Recent Gift Amount</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>31</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_2.Lifetime Giving Amount</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>32</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_2.Total Pledge Balance</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>33</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_2.Total Bequest Balance</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>34</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_2.Total Gifts and Pledges all types</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>35</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_2.CFY Payments on Previous Commitments</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>36</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_2.CFY Payments on CFY Commitments</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>37</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_2.CFY Bequest Commitment</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>38</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_2.CFY Pledge and Grant Commitments</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>39</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_2. CFY Outright Gifts and Soft Credits</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>40</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_30.F</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Click to Open Rate</label>
+        <sortIndex>41</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>rgb(217, 217, 214)</formatValue>
+                <operator>&gt;=</operator>
+                <sortIndex xsi:nil="true"/>
+                <value>0.0</value>
+            </formattingPredicates>
+            <property>backgroundColor</property>
+            <referenceField>A</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>single</type>
+        </conditionalFormatting>
+        <field>lens_30.A</field>
+        <isDerived>false</isDerived>
+        <label>Total Sends</label>
+        <sortIndex>42</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_30.C</field>
+        <isDerived>false</isDerived>
+        <label>Total Opened</label>
+        <sortIndex>43</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_30.D</field>
+        <isDerived>false</isDerived>
+        <label>Total Clicks</label>
+        <sortIndex>44</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_30.E</field>
+        <isDerived>false</isDerived>
+        <label>Unsubscribed</label>
+        <sortIndex>45</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_2_2.Most Recent Gift Amount</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>46</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_2_2.Lifetime Giving Amount</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>47</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_2_2.Total Pledge Balance</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>48</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_2_2.Total Bequest Balance</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>49</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_2_2.Total Gifts and Pledges all types</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>50</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_2_2.CFY Payments on Previous Commitments</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>51</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_2_2.CFY Payments on CFY Commitments</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>52</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_2_2.CFY Bequest Commitment</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>53</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_2_2.CFY Pledge and Grant Commitments</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>54</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_2_2. CFY Outright Gifts and Soft Credits</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>55</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_27.K</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Bounce Rate</label>
+        <sortIndex>56</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_27.I</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Open Rate</label>
+        <sortIndex>57</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_27.H</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Unsubscribe Rate</label>
+        <sortIndex>58</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_27.G</field>
+        <isDerived>false</isDerived>
+        <label>Total Clicks</label>
+        <sortIndex>59</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_27.F</field>
+        <isDerived>false</isDerived>
+        <label>Hard Bounce</label>
+        <sortIndex>60</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_27.E</field>
+        <isDerived>false</isDerived>
+        <label>Soft Bounce</label>
+        <sortIndex>61</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_27.D</field>
+        <isDerived>false</isDerived>
+        <label>Unique Clicks</label>
+        <sortIndex>62</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_27.C</field>
+        <isDerived>false</isDerived>
+        <label>Unsubscribed</label>
+        <sortIndex>63</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_27.A</field>
+        <isDerived>false</isDerived>
+        <label>Total Opens</label>
+        <sortIndex>64</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>rgb(221, 224, 228)</formatValue>
+                <operator>&gt;</operator>
+                <sortIndex xsi:nil="true"/>
+                <value>0.0</value>
+            </formattingPredicates>
+            <property>backgroundColor</property>
+            <referenceField>B</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>single</type>
+        </conditionalFormatting>
+        <field>lens_27.B</field>
+        <isDerived>false</isDerived>
+        <label>Total Sends</label>
+        <sortIndex>65</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_27.J</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Click to Open Rate</label>
+        <sortIndex>66</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_27.L</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Deliverability Rate</label>
+        <sortIndex>67</sortIndex>
+    </measures>
+    <type>Asset</type>
+    <waveVisualization>Email_Engagement_Dashboard</waveVisualization>
+</WaveXmd>

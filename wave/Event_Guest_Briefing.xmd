@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dataset xsi:nil="true"/>
+    <measures>
+        <field>Event_Details_1.A</field>
+        <isDerived>false</isDerived>
+        <label>Days To Event</label>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <field>Event_Details_1.F</field>
+        <isDerived>false</isDerived>
+        <label>Event Capacity</label>
+        <sortIndex>1</sortIndex>
+    </measures>
+    <measures>
+        <field>Event_Details_1.D</field>
+        <isDerived>false</isDerived>
+        <label>Attendance Goal</label>
+        <sortIndex>2</sortIndex>
+    </measures>
+    <measures>
+        <field>Event_Details_1.E</field>
+        <isDerived>false</isDerived>
+        <label>Attendance Goal %</label>
+        <sortIndex>3</sortIndex>
+    </measures>
+    <measures>
+        <field>Event_Details_1.C</field>
+        <isDerived>false</isDerived>
+        <label>No. of Guests</label>
+        <sortIndex>4</sortIndex>
+    </measures>
+    <measures>
+        <field>Event_Details_1.B</field>
+        <isDerived>false</isDerived>
+        <label>No. of Attendees</label>
+        <sortIndex>5</sortIndex>
+    </measures>
+    <measures>
+        <field>Master_Event_Details_1.A</field>
+        <isDerived>false</isDerived>
+        <label>Days To Event</label>
+        <sortIndex>6</sortIndex>
+    </measures>
+    <measures>
+        <field>Master_Event_Details_1.F</field>
+        <isDerived>false</isDerived>
+        <label>Event Capacity</label>
+        <sortIndex>7</sortIndex>
+    </measures>
+    <measures>
+        <field>Master_Event_Details_1.D</field>
+        <isDerived>false</isDerived>
+        <label>Attendance Goal</label>
+        <sortIndex>8</sortIndex>
+    </measures>
+    <measures>
+        <field>Master_Event_Details_1.E</field>
+        <isDerived>false</isDerived>
+        <label>Attendance Goal %</label>
+        <sortIndex>9</sortIndex>
+    </measures>
+    <measures>
+        <field>Master_Event_Details_1.C</field>
+        <isDerived>false</isDerived>
+        <label>No. of Guests</label>
+        <sortIndex>10</sortIndex>
+    </measures>
+    <measures>
+        <field>Master_Event_Details_1.B</field>
+        <isDerived>false</isDerived>
+        <label>No. of Attendees</label>
+        <sortIndex>11</sortIndex>
+    </measures>
+    <measures>
+        <field>Reunion_Anniversary__1.A</field>
+        <isDerived>false</isDerived>
+        <label>Guest Count</label>
+        <sortIndex>12</sortIndex>
+    </measures>
+    <type>Asset</type>
+    <waveVisualization>Event_Guest_Briefing</waveVisualization>
+</WaveXmd>

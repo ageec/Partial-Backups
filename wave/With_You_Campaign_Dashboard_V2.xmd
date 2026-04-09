@@ -1,0 +1,2908 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dataset xsi:nil="true"/>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Bequest Balance</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Cash</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Pledge Balance</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>CampaignType</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Access_Amount_by_Cam_3.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Pooled</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Spendable</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Undetermined and NULL</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Designation_Classification_Group</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Access_Amount_by_Des_3.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Libraries</bin>
+                <formatValue>rgb(241, 180, 52)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Professorships</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Research</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Facilities</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>3</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Academic_Distinction_Sub_Priority</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>With_You_Amount_by_A_4.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>2</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>With_You_Priority_To_1.B</field>
+        <isDerived>false</isDerived>
+        <label>Page</label>
+        <sortIndex>3</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Bequest Balance</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Cash</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Pledge Balance</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>CampaignType</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Access_Amount_by_Cam_2.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>4</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Pooled</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Spendable</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Undetermined and NULL</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Designation_Classification_Group</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Access_Amount_by_Des_2.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>5</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Other</bin>
+                <formatValue>rgb(0, 0, 0)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Research</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Scholarships/Fellowships</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Professorships</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>3</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Medicine_Sub_Priority</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>With_You_Amount_by_A_3.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>6</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Primary_Reporting_Va_2.Transaction.ARCH_Classification__c</field>
+        <isDerived>false</isDerived>
+        <label>Designation Classification</label>
+        <sortIndex>7</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Non-Pooled Investment</bin>
+                <formatValue>rgb(165, 20, 23)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Pooled</bin>
+                <formatValue>rgb(215, 210, 203)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Spendable</bin>
+                <formatValue>rgb(179, 227, 227)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Undetermined</bin>
+                <formatValue>rgb(210, 138, 139)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>3</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin xsi:nil="true"/>
+                <formatValue>rgb(23, 62, 58)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>4</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Transaction.ARCH_Classification__c</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Primary_Reporting_Va_2.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>8</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Bequest Balance</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Cash</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Pledge Balance</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>CampaignType</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>With_You_Amount_by_C_1.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>9</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Primary_Reporting_Va_1.Transaction.ARCH_Classification__c</field>
+        <isDerived>false</isDerived>
+        <label>Designation Classification</label>
+        <sortIndex>10</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Non-Pooled Investment</bin>
+                <formatValue>rgb(165, 20, 23)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Pooled</bin>
+                <formatValue>rgb(215, 210, 203)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Spendable</bin>
+                <formatValue>rgb(179, 227, 227)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Undetermined</bin>
+                <formatValue>rgb(210, 138, 139)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>3</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin xsi:nil="true"/>
+                <formatValue>rgb(23, 62, 58)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>4</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Transaction.ARCH_Classification__c</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Campaign_Purpose_Don_2.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>11</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Campaign_Purpose_Don_2.Transaction.ARCH_Classification__c</field>
+        <isDerived>false</isDerived>
+        <label>Designation Classification</label>
+        <sortIndex>12</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Campaign_Purpose_Com_1.Transaction.ARCH_Classification__c</field>
+        <isDerived>false</isDerived>
+        <label>Designation Classification</label>
+        <sortIndex>13</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Non-Pooled Investment</bin>
+                <formatValue>rgb(165, 20, 23)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Pooled</bin>
+                <formatValue>rgb(215, 210, 203)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Spendable</bin>
+                <formatValue>rgb(179, 227, 227)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Undetermined</bin>
+                <formatValue>rgb(210, 138, 139)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>3</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin xsi:nil="true"/>
+                <formatValue>rgb(23, 62, 58)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>4</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>COA.AQB__Category__c</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Total_By_Type_and_Cl_1.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>14</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Total_By_Type_and_Cl_1.Transaction.ARCH_Classification__c</field>
+        <isDerived>false</isDerived>
+        <label>Designation Classification</label>
+        <sortIndex>15</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Total_By_Type_3.Transaction.ARCH_Classification__c</field>
+        <isDerived>false</isDerived>
+        <label>Designation Classification</label>
+        <sortIndex>16</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Opportunity_Gift_Ban_1.Account.Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Account.Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>Account.Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>17</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Opportunity_Gift_Ban_1.Opportunity.Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Opportunity.Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>Opportunity.Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>18</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>#52b7d8</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>Target Gifts</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>Gift_Band_Chart_1.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>19</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Gift_Table_Detail_1.AccountName</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>AccountName</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>AccountID</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>20</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_2.Account.Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Account.Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>Account.Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>21</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Account_Detail_1.AccountName</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>AccountName</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>AccountID</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>22</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Account_Summary_1.Account.Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Account.Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>Account.Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>23</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Account_Summary_1.Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>24</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Account_Summary_1.Transaction.Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Transaction.Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>Transaction.Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>25</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Account_Summary_1.COA.Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>COA.Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>COA.Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>26</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Account_Summary_1.AccountName</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>AccountName</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>AccountID</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>27</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Graduate Scholarships</bin>
+                <formatValue>rgb(210, 138, 139)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Student Services/Other Student Support</bin>
+                <formatValue>rgb(23, 62, 58)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Undergraduate Scholarships</bin>
+                <formatValue>rgb(179, 227, 227)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>CampaignPurpose</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Campaign_Purpose_Don_1.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>28</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Bequest Balance</bin>
+                <formatValue>rgb(23, 62, 58)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Cash</bin>
+                <formatValue>rgb(210, 138, 139)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Pledge Balance</bin>
+                <formatValue>rgb(179, 227, 227)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>CampaignType</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Total_By_Type_2.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>29</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>rgb(23, 62, 58)</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>Campaign Amount</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>Cumulative_Amount_To_1.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>30</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>July</bin>
+                <formatValue>#FF9897</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>August</bin>
+                <formatValue>#FFCD95</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>September</bin>
+                <formatValue>#FFFF93</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>October</bin>
+                <formatValue>#95FFB0</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>3</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>November</bin>
+                <formatValue>#95FFFF</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>4</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>December</bin>
+                <formatValue>#98B1FF</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>5</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>January</bin>
+                <formatValue>#CD96FF</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>6</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>February</bin>
+                <formatValue>#E84340</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>7</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>March</bin>
+                <formatValue>#E8963B</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>8</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>April</bin>
+                <formatValue>#E6E830</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>9</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>May</bin>
+                <formatValue>#3AE867</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>10</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>June</bin>
+                <formatValue>#38E6E7</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>11</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>CreditedFYDateMonth</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Monthly_Total_Toggle_1.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>31</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Yearly_Total_Toggle_1.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>32</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin xsi:nil="true"/>
+                <formatValue>#FF9897</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Bequest Balance</bin>
+                <formatValue>#FFCD95</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Cash</bin>
+                <formatValue>#98B1FF</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Pledge Balance</bin>
+                <formatValue>#95FFB0</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>3</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>CampaignType</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Campaign_Type_Toggle_1.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>33</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>*</bin>
+                <formatValue>linear-gradient(to bottom, #173E3A, #173E3A)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>0</bin>
+                <formatValue>linear-gradient(to bottom, #B3E3E3, #173E3A)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Make Way Amount</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>multiple</type>
+        </conditionalFormatting>
+        <field>Make_Way_Campaign_Am_1.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>34</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>*</bin>
+                <formatValue>linear-gradient(to bottom, #A51417, #A51417)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>0</bin>
+                <formatValue>linear-gradient(to bottom, #D28A8B, #A51417)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Campaign Amount</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>multiple</type>
+        </conditionalFormatting>
+        <field>Comprehensive_Campai_1.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>35</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>*</bin>
+                <formatValue>linear-gradient(to bottom, #173E3A, #173E3A)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>0</bin>
+                <formatValue>linear-gradient(to bottom, #B3E3E3, #173E3A)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>B</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>multiple</type>
+        </conditionalFormatting>
+        <field>Make_Way_Campaign_Do_1.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>36</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>*</bin>
+                <formatValue>linear-gradient(to bottom, #A51417, #A51417)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>0</bin>
+                <formatValue>linear-gradient(to bottom, #D28A8B, #A51417)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>B</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>multiple</type>
+        </conditionalFormatting>
+        <field>Comprehensive_Campai_3.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>37</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>rgb(210, 138, 139)</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>A</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>lens_1.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>38</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>#98B1FF</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>B</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>lens_4.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>39</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>CAPS</bin>
+                <formatValue>rgb(0, 0, 0)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Graduate Fellowships</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Student Experience</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Undergraduate Scholarships</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>3</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Access_Sub_Priority</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>With_You_Amount_by_A_2.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>40</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Medicine</bin>
+                <formatValue>rgb(241, 180, 52)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Access</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Academic Distinction</bin>
+                <formatValue>rgb(0, 0, 0)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Public Health</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>3</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>With_You_Priorities</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>With_You_Amount_by_W_1.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>41</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Bequest Balance</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Cash</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Pledge Balance</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>CampaignType</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Access_Amount_by_Cam_1.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>42</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Pooled</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Spendable</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Undetermined and NULL</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Designation_Classification_Group</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>With_You_Amount_by_D_1.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>43</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Pooled</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Spendable</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Undetermined and NULL</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Designation_Classification_Group</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Access_Amount_by_Des_1.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>44</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Other</bin>
+                <formatValue>rgb(0, 0, 0)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>School/Units - Unrestricted</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Facilities</bin>
+                <formatValue>rgb(250, 247, 239)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Professorships</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>3</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Research</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>4</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>School/Units - NULL</bin>
+                <formatValue>rgb(241, 180, 52)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>5</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Public_Health_Sub_Priority</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>With_You_Amount_by_M_1.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>45</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Pooled</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Spendable</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Undetermined and NULL</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Designation_Classification_Group</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Medicine_Amount_by_D_1.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>46</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Bequest Balance</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Cash</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Pledge Balance</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>CampaignType</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Medicine_Amount_by_C_1.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>47</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Other</bin>
+                <formatValue>rgb(0, 0, 0)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>School/Units - NULL</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>School/Units - Unrestricted</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Academic_Distinction_Sub_Priority</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>With_You_Amount_by_R_1.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>48</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Bequest Balance</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Cash</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Pledge Balance</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>CampaignType</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Research_Excellence__4.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>49</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Pooled</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Spendable</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Undetermined and NULL</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Designation_Classification_Group</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Research_Excellence__3.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>50</sortIndex>
+    </dimensions>
+    <measures>
+        <field>With_You_Amount_by_P_1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <field>With_You_Amount_by_P_1.Percentage</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>1</sortIndex>
+    </measures>
+    <measures>
+        <field>With_You_Amount_by_A_1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>2</sortIndex>
+    </measures>
+    <measures>
+        <field>With_You_Amount_by_A_1.Percentage</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>3</sortIndex>
+    </measures>
+    <measures>
+        <field>Research_Excellence__1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>4</sortIndex>
+    </measures>
+    <measures>
+        <field>Research_Excellence__2.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>5</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Pooled</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Spendable</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Undetermined and NULL</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Designation_Classification_Group</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Research_Excellence__3.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>6</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Bequest Balance</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Cash</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Pledge Balance</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>CampaignType</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Research_Excellence__4.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>7</sortIndex>
+    </measures>
+    <measures>
+        <field>RE_Amount_by_RE_Sub__1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>8</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Other</bin>
+                <formatValue>rgb(0, 0, 0)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>School/Units - NULL</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>School/Units - Unrestricted</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Academic_Distinction_Sub_Priority</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>With_You_Amount_by_R_1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>9</sortIndex>
+    </measures>
+    <measures>
+        <field>Medicine_Amount_by_M_1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>10</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Bequest Balance</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Cash</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Pledge Balance</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>CampaignType</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Medicine_Amount_by_C_1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>11</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Pooled</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Spendable</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Undetermined and NULL</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Designation_Classification_Group</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Medicine_Amount_by_D_1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>12</sortIndex>
+    </measures>
+    <measures>
+        <field>Medicine_Amount_by_A_1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>13</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Other</bin>
+                <formatValue>rgb(0, 0, 0)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>School/Units - Unrestricted</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Facilities</bin>
+                <formatValue>rgb(250, 247, 239)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Professorships</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>3</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Research</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>4</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>School/Units - NULL</bin>
+                <formatValue>rgb(241, 180, 52)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>5</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Public_Health_Sub_Priority</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>With_You_Amount_by_M_1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>14</sortIndex>
+    </measures>
+    <measures>
+        <field>Access_Amount_by_Acc_2.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>15</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Bequest Balance</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Cash</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Pledge Balance</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>CampaignType</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Access_Amount_by_Cam_1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>16</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Pooled</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Spendable</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Undetermined and NULL</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Designation_Classification_Group</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Access_Amount_by_Des_1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>17</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Medicine</bin>
+                <formatValue>rgb(241, 180, 52)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Access</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Academic Distinction</bin>
+                <formatValue>rgb(0, 0, 0)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Public Health</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>3</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>With_You_Priorities</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>With_You_Amount_by_W_1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>18</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>CAPS</bin>
+                <formatValue>rgb(0, 0, 0)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Graduate Fellowships</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Student Experience</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Undergraduate Scholarships</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>3</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Access_Sub_Priority</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>With_You_Amount_by_A_2.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>19</sortIndex>
+    </measures>
+    <measures>
+        <field>Giving_Total_by_Prim_3.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>20</sortIndex>
+    </measures>
+    <measures>
+        <field>Primary_Purpose_Type_1.B</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Comprehensive Campaign Amount</label>
+        <sortIndex>21</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>#98B1FF</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>B</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>lens_4.B</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Ask Amount</label>
+        <sortIndex>22</sortIndex>
+    </measures>
+    <measures>
+        <field>Monthly_Total_Princi_1.D</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Major/Principal Gifts</label>
+        <sortIndex>23</sortIndex>
+    </measures>
+    <measures>
+        <field>Monthly_Total_Princi_1.C</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Annual/Leadership Gifts</label>
+        <sortIndex>24</sortIndex>
+    </measures>
+    <measures>
+        <field>Monthly_Total_Princi_1.B</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>25</sortIndex>
+    </measures>
+    <measures>
+        <field>Monthly_Total_Princi_1.E</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Total Gift Amount</label>
+        <sortIndex>26</sortIndex>
+    </measures>
+    <measures>
+        <field>Monthly_Total_Princi_1.A</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Cumulative Amount</label>
+        <sortIndex>27</sortIndex>
+    </measures>
+    <measures>
+        <field>Total_Campaign_and_N_1.A</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Campaign Amount</label>
+        <sortIndex>28</sortIndex>
+    </measures>
+    <measures>
+        <field>Total_Campaign_and_N_1.B</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Campaign Goal</label>
+        <sortIndex>29</sortIndex>
+    </measures>
+    <measures>
+        <field>Total_Campaign_and_N_1.C</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Gap to Goal</label>
+        <sortIndex>30</sortIndex>
+    </measures>
+    <measures>
+        <field>Total_Campaign_and_N_1.D</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Progress to Goal</label>
+        <sortIndex>31</sortIndex>
+    </measures>
+    <measures>
+        <field>Total_Campaign_and_N_1.E</field>
+        <isDerived>false</isDerived>
+        <label>Donor Count</label>
+        <sortIndex>32</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>rgb(210, 138, 139)</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>A</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>lens_1.A</field>
+        <isDerived>false</isDerived>
+        <label>Donor Count</label>
+        <sortIndex>33</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>*</bin>
+                <formatValue>linear-gradient(to bottom, #A51417, #A51417)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>0</bin>
+                <formatValue>linear-gradient(to bottom, #D28A8B, #A51417)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>B</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>multiple</type>
+        </conditionalFormatting>
+        <field>Comprehensive_Campai_3.B</field>
+        <formatCustomFormat>[&quot;#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Donor Count</label>
+        <sortIndex>34</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>*</bin>
+                <formatValue>linear-gradient(to bottom, #173E3A, #173E3A)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>0</bin>
+                <formatValue>linear-gradient(to bottom, #B3E3E3, #173E3A)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>B</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>multiple</type>
+        </conditionalFormatting>
+        <field>Make_Way_Campaign_Do_1.B</field>
+        <formatCustomFormat>[&quot;#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Donor Count</label>
+        <sortIndex>35</sortIndex>
+    </measures>
+    <measures>
+        <field>Total_Here_And_Next_Progr_1.Progress to Goal</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>36</sortIndex>
+    </measures>
+    <measures>
+        <field>Total_Here_And_Next_Progr_1.Gap to Goal</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>37</sortIndex>
+    </measures>
+    <measures>
+        <field>Total_Here_And_Next_Progr_1.Campaign Goal</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>38</sortIndex>
+    </measures>
+    <measures>
+        <field>Total_Here_And_Next_Progr_1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>39</sortIndex>
+    </measures>
+    <measures>
+        <field>Running_Total_by_Mon_1.Running Total</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>40</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>*</bin>
+                <formatValue>linear-gradient(to bottom, #A51417, #A51417)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>0</bin>
+                <formatValue>linear-gradient(to bottom, #D28A8B, #A51417)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Campaign Amount</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>multiple</type>
+        </conditionalFormatting>
+        <field>Comprehensive_Campai_1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>41</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>*</bin>
+                <formatValue>linear-gradient(to bottom, #173E3A, #173E3A)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>0</bin>
+                <formatValue>linear-gradient(to bottom, #B3E3E3, #173E3A)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Make Way Amount</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>multiple</type>
+        </conditionalFormatting>
+        <field>Make_Way_Campaign_Am_1.Make Way Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>42</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin xsi:nil="true"/>
+                <formatValue>#FF9897</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Bequest Balance</bin>
+                <formatValue>#FFCD95</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Cash</bin>
+                <formatValue>#98B1FF</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Pledge Balance</bin>
+                <formatValue>#95FFB0</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>3</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>CampaignType</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Campaign_Type_Toggle_1.B</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Campaign Amount</label>
+        <sortIndex>43</sortIndex>
+    </measures>
+    <measures>
+        <field>Yearly_Total_Toggle_1.B</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Campaign Amount</label>
+        <sortIndex>44</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>July</bin>
+                <formatValue>#FF9897</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>August</bin>
+                <formatValue>#FFCD95</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>September</bin>
+                <formatValue>#FFFF93</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>October</bin>
+                <formatValue>#95FFB0</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>3</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>November</bin>
+                <formatValue>#95FFFF</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>4</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>December</bin>
+                <formatValue>#98B1FF</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>5</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>January</bin>
+                <formatValue>#CD96FF</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>6</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>February</bin>
+                <formatValue>#E84340</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>7</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>March</bin>
+                <formatValue>#E8963B</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>8</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>April</bin>
+                <formatValue>#E6E830</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>9</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>May</bin>
+                <formatValue>#3AE867</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>10</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>June</bin>
+                <formatValue>#38E6E7</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>11</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>CreditedFYDateMonth</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Monthly_Total_Toggle_1.B</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Campaign Amount</label>
+        <sortIndex>45</sortIndex>
+    </measures>
+    <measures>
+        <field>Account_Type_Bar_Cha_1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>46</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Bequest Balance</bin>
+                <formatValue>rgb(23, 62, 58)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Cash</bin>
+                <formatValue>rgb(210, 138, 139)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Pledge Balance</bin>
+                <formatValue>rgb(179, 227, 227)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>CampaignType</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Total_By_Type_2.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>47</sortIndex>
+    </measures>
+    <measures>
+        <field>Giving_Total_by_Camp_2.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>48</sortIndex>
+    </measures>
+    <measures>
+        <field>Giving_Total_by_Camp_2.Campaign Contribution Type Percentage</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>49</sortIndex>
+    </measures>
+    <measures>
+        <field>Account_Type_1.Account Type Percentage</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>50</sortIndex>
+    </measures>
+    <measures>
+        <field>Account_Type_1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>51</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Graduate Scholarships</bin>
+                <formatValue>rgb(210, 138, 139)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Student Services/Other Student Support</bin>
+                <formatValue>rgb(23, 62, 58)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Undergraduate Scholarships</bin>
+                <formatValue>rgb(179, 227, 227)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>CampaignPurpose</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Campaign_Purpose_Don_1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>52</sortIndex>
+    </measures>
+    <measures>
+        <field>Giving_Total_by_Camp_1.Campaign Purpose Percentage</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>53</sortIndex>
+    </measures>
+    <measures>
+        <field>Giving_Total_by_Camp_1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>54</sortIndex>
+    </measures>
+    <measures>
+        <field>Designation_Classifi_1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>55</sortIndex>
+    </measures>
+    <measures>
+        <field>Giving_Total_by_Prim_1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>56</sortIndex>
+    </measures>
+    <measures>
+        <field>Giving_Total_by_Prim_1.Primary Purpose Type Percentage</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>57</sortIndex>
+    </measures>
+    <measures>
+        <field>Designation_Classifi_2.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>58</sortIndex>
+    </measures>
+    <measures>
+        <field>Giving_Total_by_Prim_2.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>59</sortIndex>
+    </measures>
+    <measures>
+        <field>Giving_Total_by_Prim_2.Primary Reporting Value Percentage</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>60</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>rgb(210, 138, 139)</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>Running Total</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>Cumulative_Amount_To_1.Running Total</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>61</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>rgb(23, 62, 58)</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>Campaign Amount</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>Cumulative_Amount_To_1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>62</sortIndex>
+    </measures>
+    <measures>
+        <field>MakeWayCampaign_1.B</field>
+        <formatCustomFormat>[&quot;#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>63</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>rgb(165, 20, 23)</formatValue>
+                <operator>!=</operator>
+                <sortIndex xsi:nil="true"/>
+                <value>0.0</value>
+            </formattingPredicates>
+            <property>backgroundColor</property>
+            <referenceField>A</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>single</type>
+        </conditionalFormatting>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>#FFFFFF</formatValue>
+                <operator>!=</operator>
+                <sortIndex xsi:nil="true"/>
+                <value>0.0</value>
+            </formattingPredicates>
+            <property>color</property>
+            <referenceField>A</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>single</type>
+        </conditionalFormatting>
+        <field>Account_Summary_1.A</field>
+        <isDerived>false</isDerived>
+        <sortIndex>64</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>rgb(23, 62, 58)</formatValue>
+                <operator>!=</operator>
+                <sortIndex xsi:nil="true"/>
+                <value>0.0</value>
+            </formattingPredicates>
+            <property>backgroundColor</property>
+            <referenceField>Campaign Amount</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>single</type>
+        </conditionalFormatting>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>#FFFFFF</formatValue>
+                <operator>!=</operator>
+                <sortIndex xsi:nil="true"/>
+                <value>0.0</value>
+            </formattingPredicates>
+            <property>color</property>
+            <referenceField>Campaign Amount</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>single</type>
+        </conditionalFormatting>
+        <field>Account_Detail_1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>65</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>rgb(165, 20, 23)</formatValue>
+                <operator>!=</operator>
+                <sortIndex xsi:nil="true"/>
+                <value>0.0</value>
+            </formattingPredicates>
+            <property>backgroundColor</property>
+            <referenceField>Campaign Amount</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>single</type>
+        </conditionalFormatting>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>#FFFFFF</formatValue>
+                <operator>!=</operator>
+                <sortIndex xsi:nil="true"/>
+                <value>0.0</value>
+            </formattingPredicates>
+            <property>color</property>
+            <referenceField>Campaign Amount</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>single</type>
+        </conditionalFormatting>
+        <field>Account_Summary_1.Campaign Amount</field>
+        <isDerived>false</isDerived>
+        <sortIndex>66</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_2.Remaining Open</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>67</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_2.Total Closed/Won Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>68</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_2.Total Ask Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>69</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>rgb(165, 20, 23)</formatValue>
+                <operator>!=</operator>
+                <sortIndex xsi:nil="true"/>
+                <value>0.0</value>
+            </formattingPredicates>
+            <property>backgroundColor</property>
+            <referenceField>Campaign Amount</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>single</type>
+        </conditionalFormatting>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>#FFFFFF</formatValue>
+                <operator>!=</operator>
+                <sortIndex xsi:nil="true"/>
+                <value>0.0</value>
+            </formattingPredicates>
+            <property>color</property>
+            <referenceField>Campaign Amount</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>single</type>
+        </conditionalFormatting>
+        <field>Gift_Table_Detail_1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>70</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>#52b7d8</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>Target Gifts</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>Gift_Band_Chart_1.Target Gifts</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>71</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>rgb(179, 227, 227)</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>Total Giving to Date</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>Gift_Band_Chart_1.Total Giving to Date</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>72</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>rgb(210, 138, 139)</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>Gifts Still Needed</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>Gift_Band_Chart_1.Gifts Still Needed</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>73</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>rgb(165, 20, 23)</formatValue>
+                <operator>!=</operator>
+                <sortIndex xsi:nil="true"/>
+                <value>0.0</value>
+            </formattingPredicates>
+            <property>backgroundColor</property>
+            <referenceField>A</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>single</type>
+        </conditionalFormatting>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>#FFFFFF</formatValue>
+                <operator>!=</operator>
+                <sortIndex xsi:nil="true"/>
+                <value>0.0</value>
+            </formattingPredicates>
+            <property>color</property>
+            <referenceField>A</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>single</type>
+        </conditionalFormatting>
+        <field>Opportunity_Gift_Ban_1.A</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Ask Amount</label>
+        <sortIndex>74</sortIndex>
+    </measures>
+    <measures>
+        <field>Total_By_Type_3.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>75</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Non-Pooled Investment</bin>
+                <formatValue>rgb(165, 20, 23)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Pooled</bin>
+                <formatValue>rgb(215, 210, 203)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Spendable</bin>
+                <formatValue>rgb(179, 227, 227)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Undetermined</bin>
+                <formatValue>rgb(210, 138, 139)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>3</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin xsi:nil="true"/>
+                <formatValue>rgb(23, 62, 58)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>4</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>COA.AQB__Category__c</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Total_By_Type_and_Cl_1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>76</sortIndex>
+    </measures>
+    <measures>
+        <field>Campaign_Purpose_Com_1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>77</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Non-Pooled Investment</bin>
+                <formatValue>rgb(165, 20, 23)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Pooled</bin>
+                <formatValue>rgb(215, 210, 203)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Spendable</bin>
+                <formatValue>rgb(179, 227, 227)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Undetermined</bin>
+                <formatValue>rgb(210, 138, 139)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>3</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin xsi:nil="true"/>
+                <formatValue>rgb(23, 62, 58)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>4</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Transaction.ARCH_Classification__c</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Campaign_Purpose_Don_2.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>78</sortIndex>
+    </measures>
+    <measures>
+        <field>Primary_Reporting_Va_1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>79</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Pooled</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Spendable</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Undetermined and NULL</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Designation_Classification_Group</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>With_You_Amount_by_D_1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>80</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Bequest Balance</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Cash</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Pledge Balance</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>CampaignType</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>With_You_Amount_by_C_1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>81</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Non-Pooled Investment</bin>
+                <formatValue>rgb(165, 20, 23)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Pooled</bin>
+                <formatValue>rgb(215, 210, 203)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Spendable</bin>
+                <formatValue>rgb(179, 227, 227)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Undetermined</bin>
+                <formatValue>rgb(210, 138, 139)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>3</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin xsi:nil="true"/>
+                <formatValue>rgb(23, 62, 58)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>4</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Transaction.ARCH_Classification__c</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Primary_Reporting_Va_2.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>82</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Other</bin>
+                <formatValue>rgb(0, 0, 0)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Research</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Scholarships/Fellowships</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Professorships</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>3</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Medicine_Sub_Priority</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>With_You_Amount_by_A_3.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>83</sortIndex>
+    </measures>
+    <measures>
+        <field>Access_Amount_by_Acc_3.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>84</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Pooled</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Spendable</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Undetermined and NULL</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Designation_Classification_Group</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Access_Amount_by_Des_2.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>85</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Bequest Balance</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Cash</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Pledge Balance</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>CampaignType</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Access_Amount_by_Cam_2.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>86</sortIndex>
+    </measures>
+    <measures>
+        <field>Access_Amount_by_Acc_4.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>87</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Libraries</bin>
+                <formatValue>rgb(241, 180, 52)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Professorships</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Research</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Facilities</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>3</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Academic_Distinction_Sub_Priority</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>With_You_Amount_by_A_4.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>88</sortIndex>
+    </measures>
+    <measures>
+        <field>Access_Amount_by_Acc_5.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>89</sortIndex>
+    </measures>
+    <measures>
+        <field>Access_Amount_by_Pri_2.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>90</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Pooled</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Spendable</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Undetermined and NULL</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Designation_Classification_Group</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Access_Amount_by_Des_3.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>91</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Bequest Balance</bin>
+                <formatValue>rgb(0, 125, 138)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Cash</bin>
+                <formatValue>rgb(186, 12, 47)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>Pledge Balance</bin>
+                <formatValue>rgb(33, 87, 50)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>CampaignType</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Access_Amount_by_Cam_3.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>92</sortIndex>
+    </measures>
+    <measures>
+        <field>Access_Amount_by_Acc_6.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>93</sortIndex>
+    </measures>
+    <measures>
+        <field>Access_Amount_by_Acc_1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>94</sortIndex>
+    </measures>
+    <measures>
+        <field>Access_Amount_by_Pri_1.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>95</sortIndex>
+    </measures>
+    <measures>
+        <field>Total_Campaign_and_N_4.Progress to Goal</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>96</sortIndex>
+    </measures>
+    <measures>
+        <field>Total_Campaign_and_N_4.Gap to Goal</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>97</sortIndex>
+    </measures>
+    <measures>
+        <field>Total_Campaign_and_N_4.Campaign Goal</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>98</sortIndex>
+    </measures>
+    <measures>
+        <field>Total_Campaign_and_N_4.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>99</sortIndex>
+    </measures>
+    <measures>
+        <field>Total_Campaign_and_N_5.Campaign Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>100</sortIndex>
+    </measures>
+    <measures>
+        <field>Total_Campaign_and_N_5.Campaign Goal</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>101</sortIndex>
+    </measures>
+    <measures>
+        <field>Total_Campaign_and_N_5.Gap to Goal</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>102</sortIndex>
+    </measures>
+    <measures>
+        <field>Total_Campaign_and_N_5.Progress to Goal</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>103</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_5.Ask Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>104</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_5.Percent to Goal</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>105</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_5.Gifts Still Needed</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>106</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_5.Total Giving to Date</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>107</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_5.Target Gifts</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>108</sortIndex>
+    </measures>
+    <measures>
+        <field>Gift_Band_Total_1.Running Total</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>109</sortIndex>
+    </measures>
+    <measures>
+        <field>Gift_Band_Total_1.Target Gifts</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>110</sortIndex>
+    </measures>
+    <measures>
+        <field>Gift_Band_Total_1.Total Giving to Date</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>111</sortIndex>
+    </measures>
+    <measures>
+        <field>Gift_Band_Total_1.Gifts Still Needed</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>112</sortIndex>
+    </measures>
+    <measures>
+        <field>Gift_Band_Total_1.Ask Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>113</sortIndex>
+    </measures>
+    <type>Asset</type>
+    <waveVisualization>With_You_Campaign_Dashboard_V2</waveVisualization>
+</WaveXmd>
