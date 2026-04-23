@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDashboard xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <content xsi:nil="true"/>
+    <application>SharedApp</application>
+    <dateVersion>1</dateVersion>
+    <description>Fundraiser Dashboard unites data from portfolios, opportunities, gifts, activity reports, activities, prospect lists, events, reunions, birthdays, cases and Eliot Society as related to the fundraiser.
+Fundraiser Dashboard excludes Medical Prospects based on the Account object Med Prospect field, and the Opportunity object Opportunity Record Type field not including Grateful Patients.</description>
+    <masterLabel>Fundraiser Dashboard</masterLabel>
+</WaveDashboard>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDashboard xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <content xsi:nil="true"/>
+    <application>SharedApp</application>
+    <dateVersion>1</dateVersion>
+    <description>Dashboard for the schools and units acknowledgement processes. A variety of filters are available on the dashboard to identify the gifts for specific schools and units to acknowledge.</description>
+    <masterLabel>School/Unit Gift Acknowledgement</masterLabel>
+</WaveDashboard>
