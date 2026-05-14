@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDashboard xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <content xsi:nil="true"/>
+    <application>SharedApp</application>
+    <dateVersion>1</dateVersion>
+    <description>The Awarded (TPS Tool) dashboard provides an award‑level view of ARCH data to support scholarship matching, award monitoring, and donor stewardship. It surfaces key award details, current funding and student information, and new indicators for donor fund structure, key contact status, WashU affiliation, gift commitment type, and legacy status. Filters based on fields from the Award record (including class status and do not match) let users quickly narrow to relevant awards, while a row count and links to the ARCH Award record make it easier to audit results and drill into individual awards as needed.</description>
+    <masterLabel>Awarded (TPS Tool) Dashboard</masterLabel>
+</WaveDashboard>
