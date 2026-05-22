@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dataset xsi:nil="true"/>
+    <dimensions>
+        <field>__PrG_Solicited_Deta_1.Opportunity.AQC_Date_Asked__c_Year~~~Opportunity.AQC_Date_Asked__c_Month~~~Opportunity.AQC_Date_Asked__c_Day</field>
+        <isDerived>false</isDerived>
+        <label>Date Asked</label>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>__PrG_Solicited_Deta_1.Opportunity.Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Opportunity.Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>Opportunity.Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>__PrG_Solicited_Deta_1.Account.Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Account.Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>Account.Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>2</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>PSO_Opportunity_Deta_2.AQC_Date_Asked__c_Year~~~AQC_Date_Asked__c_Month~~~AQC_Date_Asked__c_Day</field>
+        <isDerived>false</isDerived>
+        <label>Date Asked</label>
+        <sortIndex>3</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>PSO_Opportunity_Deta_2.Name</field>
+        <isDerived>false</isDerived>
+        <label>Opportunity Name</label>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>4</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>PSO_Opportunity_Deta_2.Account.Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Account.Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>Account.Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>5</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>WHDLS_New_Members_De_1.Account.Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>Account.Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>Account.Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>6</sortIndex>
+    </dimensions>
+    <measures>
+        <field>__PrG_Solicited_Deta_1.A</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Ask Amount</label>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <field>__PrG_Solicited_Summ_1.C</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>% to Goal</label>
+        <sortIndex>1</sortIndex>
+    </measures>
+    <measures>
+        <field>__PrG_Solicited_Summ_1.A</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>$ PrG Solicited</label>
+        <sortIndex>2</sortIndex>
+    </measures>
+    <measures>
+        <field>__PrG_Solicited_Summ_1.B</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Goal</label>
+        <sortIndex>3</sortIndex>
+    </measures>
+    <measures>
+        <field>PSO_Opportunity_Deta_2.A</field>
+        <isDerived>false</isDerived>
+        <label>Count</label>
+        <sortIndex>4</sortIndex>
+    </measures>
+    <measures>
+        <field>PSO_Opportunity_Deta_1.# Opp Scholarships</field>
+        <formatCustomFormat>[&quot;#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>5</sortIndex>
+    </measures>
+    <measures>
+        <field>PSO_Opportunity_Deta_1.# Opp Scholarships Goal</field>
+        <formatCustomFormat>[&quot;#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>6</sortIndex>
+    </measures>
+    <measures>
+        <field>PSO_Opportunity_Deta_1.% to Goal</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>7</sortIndex>
+    </measures>
+    <measures>
+        <field>WHDLS_New_Members_Su_1.B</field>
+        <isDerived>false</isDerived>
+        <label>Goal</label>
+        <sortIndex>8</sortIndex>
+    </measures>
+    <measures>
+        <field>WHDLS_New_Members_Su_1.C</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>% to Goal</label>
+        <sortIndex>9</sortIndex>
+    </measures>
+    <measures>
+        <field>WHDLS_New_Members_Su_1.A</field>
+        <isDerived>false</isDerived>
+        <label>WHDLS New Members</label>
+        <sortIndex>10</sortIndex>
+    </measures>
+    <measures>
+        <field>WHDLS_New_Members_De_1.A</field>
+        <isDerived>false</isDerived>
+        <label>Count</label>
+        <sortIndex>11</sortIndex>
+    </measures>
+    <type>Asset</type>
+    <waveVisualization>P_M_Opportunities_Solicited_Amount_Detail_2</waveVisualization>
+</WaveXmd>
