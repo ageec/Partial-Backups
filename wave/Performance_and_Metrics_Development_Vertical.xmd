@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dataset xsi:nil="true"/>
+    <dimensions>
+        <field>Gift_Officer_Toggle__1.Name</field>
+        <isDerived>false</isDerived>
+        <label>Gift Officer</label>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <measures>
+        <field>Planned_Giving_linke_1.New Production w/ Bequests</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <field>Planned_Giving_2.New Production w/ Bequests</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>1</sortIndex>
+    </measures>
+    <measures>
+        <field>Planned_Giving_1.New Production w/ Bequests</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>2</sortIndex>
+    </measures>
+    <measures>
+        <field>Eliot_Count_Number_1.% to Goal</field>
+        <formatCustomFormat>[&quot;#,###.#%&quot;,100]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>3</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_3.$ - Closed/Won Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>4</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_3.Goal</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>5</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_3.% to Goal</field>
+        <formatCustomFormat>[&quot;#,###.#%&quot;,100]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>6</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Total_Opportunit_4.C</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>% to Goal</label>
+        <sortIndex>7</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Total_Opportunit_4.B</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Goal Currency Amount</label>
+        <sortIndex>8</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Total_Opportunit_4.A</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>$ Opportunities Closed/Won</label>
+        <sortIndex>9</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Total_Opportunit_5.C</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>% to Goal</label>
+        <sortIndex>10</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Total_Opportunit_5.B</field>
+        <isDerived>false</isDerived>
+        <label>Goal Count</label>
+        <sortIndex>11</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Total_Opportunit_5.A</field>
+        <isDerived>false</isDerived>
+        <label># Opportunities Closed/Won</label>
+        <sortIndex>12</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Total_Opportunit_6.A</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>$ Opportunities Solicited</label>
+        <sortIndex>13</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Total_Opportunit_6.B</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Goal Currency Amount</label>
+        <sortIndex>14</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Total_Opportunit_6.C</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>% to Goal</label>
+        <sortIndex>15</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Total_Opportunit_7.A</field>
+        <isDerived>false</isDerived>
+        <label># Opportunities Solicited</label>
+        <sortIndex>16</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Total_Opportunit_7.B</field>
+        <isDerived>false</isDerived>
+        <label>Goal Count</label>
+        <sortIndex>17</sortIndex>
+    </measures>
+    <measures>
+        <field>CFY_Total_Opportunit_7.C</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>% to Goal</label>
+        <sortIndex>18</sortIndex>
+    </measures>
+    <measures>
+        <field>___1M__Opportunities_1.% to Goal</field>
+        <formatCustomFormat>[&quot;#,###.#%&quot;,100]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>19</sortIndex>
+    </measures>
+    <measures>
+        <field>Planned_Giving_New_P_1.New Production w/ Bequests</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>20</sortIndex>
+    </measures>
+    <measures>
+        <field>_1M___Prospects_Qual_1.% to Goal</field>
+        <formatCustomFormat>[&quot;#,###.#%&quot;,100]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>21</sortIndex>
+    </measures>
+    <measures>
+        <field>_1M___Prospects_Qual_1.% $1M+ Prospects Qualified</field>
+        <formatCustomFormat>[&quot;#,###.#%&quot;,100]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>22</sortIndex>
+    </measures>
+    <measures>
+        <field>Time_to_Close_Opport_1.Opportunity.DaysFromAskDateToCloseDate</field>
+        <formatCustomFormat>[&quot;#,###.#&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>23</sortIndex>
+    </measures>
+    <measures>
+        <field>Closed_Won_Opp_Conve_1.# - Closed/Won Conversion %</field>
+        <formatCustomFormat>[&quot;#,###.#%&quot;,100]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>24</sortIndex>
+    </measures>
+    <measures>
+        <field>Closed_Won_Opp_Conve_1.$ - Closed/Won Amount Goal</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>25</sortIndex>
+    </measures>
+    <measures>
+        <field>Closed_Won_Opp_Conve_1.$ - Closed/Won Conversion %</field>
+        <formatCustomFormat>[&quot;#,###.#%&quot;,100]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>26</sortIndex>
+    </measures>
+    <measures>
+        <field>Closed_Won_Opp_Conve_1.$ - Closed Ask Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>27</sortIndex>
+    </measures>
+    <measures>
+        <field>Closed_Won_Opp_Conve_1.$ - Closed/Won Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>28</sortIndex>
+    </measures>
+    <measures>
+        <field>Donor_Count_Number_1.# - Donor Count Goal</field>
+        <formatCustomFormat>[&quot;#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>29</sortIndex>
+    </measures>
+    <measures>
+        <field>Donor_Count_Number_1.% to Donor Count Goal</field>
+        <formatCustomFormat>[&quot;#,###.#%&quot;,100]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>30</sortIndex>
+    </measures>
+    <type>Asset</type>
+    <waveVisualization>Performance_and_Metrics_Development_Vertical</waveVisualization>
+</WaveXmd>
